@@ -1,0 +1,240 @@
+
+/////////////////////////////////////////////////////////////////////
+//////////////////////////   MAIN MENU  /////////////////////////////
+/////////////////////////////////////////////////////////////////////
+#main_menu{
+  position: fixed;
+  z-index: 10;
+  top: 0; left: 0;
+  width: 100%;
+  height: $menu_mobile_height;
+
+  .wrapper_container{
+    height: 100%;
+  }
+
+
+  ////////////////////////
+  // MENU ICON
+  .menu_icon{
+    display: inline-block;
+    position: relative;
+    width: $menu_mobile_height;
+
+    // Button
+    a{
+      position: relative;
+      display: block;
+      width: 100%;
+      padding-bottom: 100%;
+
+      color: #FFF;
+      background: $id_color;
+      font-weight: bold;
+    }
+
+    // Icon
+    span{
+      position: absolute;
+      left: 50%; top: 50%;
+      transform: translate(-50%, -50%);
+      zoom: 1.32;
+    }
+  }
+
+
+
+  ////////////////////////
+  // LOGO
+  .logo{
+    display: inline;
+    position: relative;
+    padding: .3em 0;
+    margin-left: 1em;
+    height: 100%;
+    @include alignCenter(false, true);
+
+    img{
+      width: auto !important;
+      height: 100%;
+    }
+  }
+
+
+
+
+  ////////////////////////
+  // MENU LIST
+  nav{
+    display: none;
+  }
+
+
+
+  ////////////////////////
+  // SEARCH FORM
+  #search_frm{
+    @include alignCenter(false, true);
+    right: 10px;
+
+    label{
+      @include text-hide();
+      width: 26px;
+      height: 26px;
+      margin: 0; padding: 0;
+
+      background: url($images-path+'search_icon.svg') center no-repeat;
+      background-size: contain;
+    }
+
+    input[type=text]{
+      display: none;
+    }
+  }
+
+
+
+
+  ///////////////////////////////////////
+  // MEDIA QUERIES
+  ///////////////////////////////////////
+  @media screen and (min-width: $bp_desktop){
+
+    .wrapper_container{
+      padding-left: 25.357143%;
+    }
+
+    ////////////////////////
+    // MENU ICON
+    .menu_icon{
+      display: none;
+    }
+
+
+    ////////////////////////
+    // LOGO
+    .logo{
+      margin-top: .2em;
+    }
+
+    ////////////////////////
+    // MENU LIST
+    nav{
+      display: block;
+      height: 100%;
+      @include clearfix();
+      position: absolute;
+      right: 3em; top: 0;
+      
+      // MENU
+      ul{
+        list-style: none;
+        margin: 0 0; padding: .5em 0 0;
+        width: 100%;
+
+        // ITEM
+        li{
+          display: inline;
+          float: left;
+          margin: 0 .2em;
+
+          // Hover
+          &:hover{
+            a{
+              background: $id_color;
+            }
+
+            ul.submenu{
+              display: block;
+            }
+          }
+
+          
+          // Link
+          a{
+            display: inline-block;
+            color: #fff;
+            text-transform: uppercase;
+            font-family: $font_titles;
+            font-size: .95em;
+            font-weight: bold;
+            padding: .35em .35em;
+
+            // Hover State
+            &:hover{
+              text-decoration: none;
+            }
+          }
+
+          // SUBMENU LIST
+          ul.submenu{
+            display: none;
+            background: #fff;
+            padding: .5em;
+            position: absolute;
+            width: auto;
+
+            // ITEM
+            li{
+              float: none;
+              display: block;
+              border-bottom: 2px solid #111;
+              
+              //
+              &:last-child{
+                border-bottom: none;
+              }
+
+              // Links
+              a{
+                display: block;
+                color: #111;
+                background: none;
+                font-size: .785em;
+  
+                // Hover State
+                &:hover,
+                &.active{
+                  background: none;
+                  color: $id_color;
+                }
+              }
+            }
+
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 980px){
+    height: $menu_desktop_height;
+
+    ////////////////////////
+    // MENU ICON
+    .menu_icon{
+      width: $menu_desktop_height;
+    }
+    ////////////////////////
+    // MENU LIST
+    nav{
+      right: 4em; 
+
+      ul{
+        padding-top: 1em;
+        margin: 0 1em 0 0; 
+
+        // ITEM
+        li{      
+          margin: 0 .2em;
+
+          // Link
+          a{
+            font-size: 1em;
+          }
+        }
+      }
+    }
+  }
+}
+

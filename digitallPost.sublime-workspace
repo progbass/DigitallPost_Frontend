@@ -1,0 +1,691 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"padding",
+				"padding-bottom"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"ease-",
+				"ease-out"
+			],
+			[
+				"marg",
+				"margin-bottom: "
+			],
+			[
+				"mar",
+				"margin-top: "
+			],
+			[
+				"pad",
+				"padding: "
+			],
+			[
+				"max",
+				"max-height: "
+			],
+			[
+				"paddi",
+				"padding-right: "
+			],
+			[
+				"u",
+				"uppercase"
+			],
+			[
+				"padd",
+				"padding-right: "
+			],
+			[
+				"le",
+				"left"
+			],
+			[
+				"tranfr",
+				"transform"
+			],
+			[
+				"text",
+				"text-transform: "
+			],
+			[
+				"boerri",
+				"border-right: "
+			],
+			[
+				"paddin",
+				"padding-left: "
+			],
+			[
+				"trans",
+				"transform"
+			],
+			[
+				"back",
+				"background-color: "
+			],
+			[
+				"au",
+				"auto"
+			],
+			[
+				"te",
+				"text-transform: "
+			],
+			[
+				"max-",
+				"max-width: "
+			],
+			[
+				"leasing",
+				"leasing_2clipTop1_rect"
+			],
+			[
+				"inline-",
+				"inline-block"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"re",
+				"rectPos"
+			],
+			[
+				"inner",
+				"innerWidth"
+			],
+			[
+				"ch",
+				"checkpoint"
+			],
+			[
+				"check",
+				"checkpoint2"
+			],
+			[
+				"pos",
+				"pos_x"
+			],
+			[
+				"scroll",
+				"scroll_position"
+			],
+			[
+				"reu",
+				"require"
+			],
+			[
+				"window",
+				"window_top_position"
+			],
+			[
+				"texta",
+				"text-align: "
+			],
+			[
+				"ma",
+				"margin-bottom: "
+			],
+			[
+				"font",
+				"font-weight: "
+			],
+			[
+				"he",
+				"height: "
+			],
+			[
+				"ab",
+				"absolute"
+			],
+			[
+				"blo",
+				"block"
+			],
+			[
+				"pa",
+				"padding: "
+			],
+			[
+				"min-",
+				"min-height"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"login",
+				"login_status"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"push",
+				"push_buttons"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "pack",
+		"selected_items":
+		[
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"package control",
+				"Package Control: Upgrade/Overwrite All Packages"
+			]
+		],
+		"width": 593.0
+	},
+	"console":
+	{
+		"height": 153.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/progbass/Sites/DigitallPost/front-end"
+	],
+	"file_history":
+	[
+		"/Users/progbass/Sites/Renting/desarrollo/app/contact.php",
+		"/Users/progbass/Sites/Renting/desarrollo/app/utils/mail.inc.php",
+		"/Users/progbass/Sites/Renting/desarrollo/app/views/contact.html",
+		"/Users/progbass/Sites/Renting/desarrollo/app/scripts/directives/leasing.js",
+		"/Users/progbass/Sites/Renting/desarrollo/app/scripts/directives/contact.js",
+		"/Users/progbass/Sites/Renting/desarrollo/app/scripts/directives/scroll.js",
+		"/Users/progbass/Sites/Renting/desarrollo/app/scripts/directives/home.js",
+		"/Users/progbass/Sites/Renting/desarrollo/app/styles/_contact.scss",
+		"/Users/progbass/Sites/Renting/desarrollo/app/scripts/directives/section.js",
+		"/Users/progbass/Sites/Renting/desarrollo/app/index.html",
+		"/Users/progbass/Sites/Renting/desarrollo/bower.json",
+		"/Users/progbass/Sites/Renting/desarrollo/app/scripts/directives/about.js",
+		"/Users/progbass/Sites/Renting/desarrollo/app/scripts/directives/menu.js",
+		"/Users/progbass/Sites/Renting/desarrollo/app/views/about.html",
+		"/Users/progbass/Sites/Renting/desarrollo/Gruntfile.js",
+		"/Volumes/LaCie/SITES/Elixir/banners/elixir-trio/html/index.html",
+		"/Volumes/LaCie/SITES/Elixir/banners/elixir-dueto/html/index.html",
+		"/Volumes/LaCie/SITES/Elixir/desarrollo/index.html",
+		"/Volumes/LaCie/SITES/Elixir/banners/elixir-beatbox/html/index.html",
+		"/Users/progbass/Downloads/31f56f02-de3b-4651-901e-a6ed3db31c17-2/31f56f02-de3b-4651-901e-a6ed3db31c17.html",
+		"/Users/progbass/Sites/Renting/desarrollo/app/views/leasing.html",
+		"/Users/progbass/Sites/Renting/desarrollo/app/styles/_about.scss",
+		"/Users/progbass/Sites/Renting/desarrollo/app/styles/_faqs.scss",
+		"/Users/progbass/Sites/Renting/desarrollo/app/scripts/directives/faqs.js",
+		"/Users/progbass/Sites/Renting/desarrollo/app/views/faqs.html",
+		"/Users/progbass/Sites/Renting/desarrollo/app/styles/_leasing.scss",
+		"/Users/progbass/Sites/Renting/desarrollo/app/styles/_offer.scss",
+		"/Users/progbass/Sites/Renting/desarrollo/app/views/offer.html",
+		"/Users/progbass/Sites/Renting/desarrollo/app/scripts/directives/offer.js",
+		"/Users/progbass/Sites/Renting/desarrollo/app/scripts/controllers/scroll.js",
+		"/Users/progbass/Sites/Renting/desarrollo/app/scripts/controllers/section.js",
+		"/Users/progbass/Sites/Renting/desarrollo/app/scripts/app.js",
+		"/Users/progbass/Sites/Renting/desarrollo/app/views/main.html",
+		"/Users/progbass/Sites/Renting/desarrollo/app/scripts/controllers/main.js",
+		"/Volumes/LaCie/SITES/Levis/desarrollo/css/tailorShop.scss",
+		"/Users/progbass/Sites/ClaudiaOlguin/wp-content/themes/claudia_olguin/ClaudiaOlguin.sublime-project",
+		"/Users/progbass/Sites/Renting/desarrollo/app/scripts/controllers/about.js",
+		"/Volumes/LaCie/SITES/Levis/desarrollo/tailorShop.html",
+		"/Volumes/LaCie/SITES/Levis/desarrollo/tailorShop_content.aspx",
+		"/Users/progbass/Sites/Renting/desarrollo/app/views/about_svg1.html",
+		"/Users/progbass/Sites/Renting/desarrollo/app/views/contact_svg2.html",
+		"/Users/progbass/Sites/Renting/desarrollo/app/views/contact_svg1.html",
+		"/Users/progbass/Sites/Renting/desarrollo/app/views/about_svg2.html",
+		"/Users/progbass/Sites/Renting/desarrollo/app/views/offer_svg3.html",
+		"/Users/progbass/Sites/Renting/desarrollo/app/views/offer_svg2.html",
+		"/Users/progbass/Sites/Renting/desarrollo/app/views/offer_svg1.html",
+		"/Users/progbass/Sites/Renting/desarrollo/app/scripts/main.js",
+		"/Volumes/LaCie/SITES/Levis/desarrollo/505_content.aspx",
+		"/Volumes/LaCie/SITES/Levis/desarrollo/511_711.html",
+		"/Volumes/LaCie/SITES/Levis/desarrollo/505.html",
+		"/Volumes/LaCie/SITES/Levis/desarrollo/505/main.js",
+		"/Volumes/LaCie/SITES/Levis/desarrollo/511_711/main.js",
+		"/Volumes/LaCie/SITES/Levis/desarrollo/css/505.scss",
+		"/Volumes/LaCie/SITES/Levis/desarrollo/css/511_711.scss",
+		"/Volumes/LaCie/SITES/Levis/desarrollo/511_711_content.aspx",
+		"/Volumes/LaCie/SITES/Levis/desarrollo/css/511_711.css",
+		"/Users/progbass/Sites/Suma/wordpress/wp-content/themes/sumaweb/grunt/bower.json",
+		"/Users/progbass/Sites/Suma/wordpress/wp-content/themes/sumaweb/single.php",
+		"/Users/progbass/Sites/Suma/wordpress/wp-content/themes/sumaweb/footer.php",
+		"/Users/progbass/Sites/Suma/wordpress/wp-content/themes/sumaweb/front-page.php",
+		"/Users/progbass/Sites/Suma/wordpress/wp-content/themes/sumaweb/index.php",
+		"/Users/progbass/Sites/Suma/wordpress/wp-content/themes/sumaweb/page_blog.php",
+		"/Users/progbass/Sites/Suma/wordpress/wp-content/themes/sumaweb/single-blog_post.php",
+		"/Users/progbass/Sites/Suma/wordpress/wp-content/themes/sumaweb/page.php",
+		"/Users/progbass/Sites/Suma/wordpress/wp-content/themes/sumaweb/page_portfolio.php",
+		"/Users/progbass/Sites/Suma/wordpress/wp-content/themes/sumaweb/sidebar.php",
+		"/Users/progbass/Sites/Suma/wordpress/wp-content/themes/sumaweb/js/main.js",
+		"/Users/progbass/Sites/Suma/wordpress/wp-content/themes/sumaweb/scss/_base2.scss",
+		"/Users/progbass/Sites/Suma/wordpress/wp-content/themes/sumaweb/loop.php",
+		"/Volumes/LaCie/SITES/Suma/v2/wordpress/wp-content/themes/sumaweb/index.php",
+		"/Volumes/LaCie/SITES/Suma/v2/wordpress/wp-content/themes/sumaweb/front-page.php",
+		"/Volumes/LaCie/SITES/Levis/desarrollo/skateboarding-frame.aspx",
+		"/Volumes/LaCie/SITES/Levis/desarrollo/skateboarding.html",
+		"/Volumes/LaCie/SITES/Levis/desarrollo/skateboard.aspx",
+		"/Users/progbass/Sites/Denn/desarrollo/grunt/gruntfile.js",
+		"/Users/progbass/Sites/Denn/desarrollo/floors.json",
+		"/Volumes/LaCie/SITES/ClaudiaOlguin/desarrollo/wordpress/wp-content/themes/claudia_olguin/page.php",
+		"/Volumes/LaCie/SITES/Aliat/resources/mailings/index.html",
+		"/Users/progbass/Sites/ColdwellBanker/desarrollo/application/views/notificaciones.php",
+		"/Users/progbass/Sites/ColdwellBanker/desarrollo/application/controllers/Notificaciones.php",
+		"/Users/progbass/Sites/ColdwellBanker/desarrollo/application/models/Login_model.php",
+		"/Users/progbass/Sites/ColdwellBanker/desarrollo/application/controllers/Home.php",
+		"/Users/progbass/Sites/ColdwellBanker/desarrollo/application/views/templates/header.php",
+		"/Users/progbass/Sites/ColdwellBanker/desarrollo/application/controllers/Login.php",
+		"/Users/progbass/Sites/ColdwellBanker/desarrollo/application/config/config.php",
+		"/Users/progbass/Sites/ColdwellBanker/desarrollo/application/config/database.php",
+		"/Users/progbass/Sites/ColdwellBanker/desarrollo/composer.json",
+		"/Users/progbass/Sites/ColdwellBanker/desarrollo/.gitignore",
+		"/Users/progbass/Sites/ColdwellBanker/desarrollo/gruntfile.js",
+		"/Users/progbass/Sites/ColdwellBanker/desarrollo/bower.json",
+		"/Volumes/LaCie/SITES/LaikasEscape/desarolloArduino/main.js",
+		"/Volumes/LaCie/SITES/LaikasEscape/desarolloArduino/index.html"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"console",
+			"doClick",
+			"draw",
+			"offset",
+			"Offset",
+			"offset",
+			"windowTop",
+			"valid",
+			"var console = angular.element($el).find('.console');",
+			"ng-",
+			"input[type=text],",
+			"serve",
+			",",
+			"contactData",
+			"mail_txt",
+			"name_txt",
+			"mail_txt",
+			"name_txt",
+			"mail_txt",
+			"name",
+			"user",
+			"name",
+			"_txt",
+			"src=\"images/",
+			"span",
+			"src=\"images/",
+			"//font-size: 1.25vw;",
+			"1em",
+			".5",
+			"top",
+			"56vw",
+			"30",
+			"header",
+			"wrapper",
+			"resize",
+			"resizeSection",
+			"icon",
+			"ScrollC",
+			"ScrollCtr",
+			"min-",
+			"title",
+			"frame",
+			"inView",
+			"icon",
+			"inView",
+			"icon",
+			".question",
+			"ng-click=\"closeModal()\" ",
+			"displ",
+			"element",
+			"this",
+			"frame.answer",
+			"contact",
+			"780",
+			"h3",
+			"650",
+			"560",
+			"550",
+			"720",
+			"frame1",
+			"58",
+			"33",
+			"63",
+			"365",
+			"4",
+			".){",
+			"leasing_2clipRight2_rect",
+			"580",
+			"1250",
+			"leasing_2clipRight3",
+			"leasing_2clipRight3_rect",
+			"leasing_2clipRight2_rect",
+			"leasing_2clipRight1_rect",
+			"532",
+			"FFB700",
+			"/>",
+			"966.234",
+			"11.338",
+			"710",
+			"720",
+			"1vw",
+			"casa",
+			"40px",
+			"anchorScroll",
+			"window",
+			"50%",
+			"0",
+			"hover",
+			"1.2",
+			"7.75",
+			"operaciones",
+			"12",
+			"lighten($id_color2, 10%)",
+			"5",
+			"30px",
+			"Info",
+			"h3",
+			"color",
+			"Color",
+			"color",
+			"Color",
+			"color",
+			"Color",
+			"color",
+			"header .logo",
+			"console",
+			"this",
+			"href=\"#\" ",
+			"rotate",
+			"38.2",
+			"images",
+			"$scope",
+			"homeCtrl",
+			"$scope",
+			"watch",
+			"console.log",
+			"changeProduct",
+			"el",
+			"FFB700",
+			"/>",
+			"renta",
+			"unidad",
+			"incude",
+			"offer2ClipRectRight",
+			"leasing",
+			"rightbar",
+			"leftbar",
+			"/>"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content"
+							],
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.CSS Extended Completions":
+	{
+		"height": 0.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "digitallPost.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 206.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -1,0 +1,287 @@
+
+/////////////////////////////////////////////////////////////////////
+///////////////////////////   HEADER  ///////////////////////////////
+/////////////////////////////////////////////////////////////////////
+header{
+  position: relative;
+  width: 100%;
+  
+
+  ////////////////////////
+  // IMAGE
+  .photo_holder{
+    position: relative;
+    background-color: #000;
+    width: 100%;
+    overflow: hidden;
+
+    // SHADOW OVERLAY
+    /*
+    &:after{
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      padding-bottom: 18%;
+      @include linear-gradient(rgba(#000, 0) 0%, rgba(#000, .8) 95%);
+      background-color: transparent;
+    }*/
+
+
+
+    ////////////////////////
+    // VIDEO TYPE
+    &.video_type{
+      a{
+        // Player Icon
+        &:after{
+          content: '';
+          display: block;
+          position: absolute;
+          z-index: 1;
+          @include alignCenter();
+          width: 62px;
+          height: 62px;
+          background: url($images-path+'icon_videoPlayer.png') no-repeat center;
+          background-size: contain;
+        }
+      }
+    }
+
+
+    // ARTICLE COVER
+    img{
+      //position: absolute;
+      top: 0; left: 0; bottom: 0; right: 0;
+      min-width: 100%;
+      max-width: 100%;
+      width: 100%;
+      height: 100%;
+    }
+
+    a{
+      display: block;
+
+      &:before{
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        width: 100%; height: 100%;
+        //@include linear-gradient(rgba(#000, .7) 0%, rgba(#000, .3) 50%, rgba(#000, 0) 95%);
+        background-color: rgba(#000, .4);
+        @include transition(background-color .2s ease-out);
+      }
+    }
+  }
+
+
+  ////////////////////////
+  // INFO HOLDER
+  .article_info{
+    @extend .container;
+    text-align: center;
+    padding-bottom: 2em; padding-top: 2em;
+    width: 100%;
+  }
+
+
+
+  ////////////////////////
+  // TITLES
+  h3.cat_name{
+    @include transform(translateY(-50%));
+  }
+
+  h2{
+    text-transform: uppercase;
+    font-size: 1.999em;
+    margin: .25em auto;
+
+    //LINK
+    a{
+      color: #222;
+      @include transition(all .08s ease-out);
+
+      // HOVER
+      &:hover{
+        color: #fff;
+        background: $id_color;
+        text-decoration: none;
+      }
+    }
+  }
+
+
+
+  ////////////////////////
+  // LATES NEWS
+  .latest_holder{
+    display: none;
+
+    ////
+    // LIST
+    ul{
+      position: relative;
+      margin: 0; padding: 0; border: 0;
+      list-style: none;
+      height: 100%;
+      @include clearfix();
+
+      li{
+        position: relative;
+        float: left;
+        width: 33.333%;
+        height: 100%;
+        
+
+        // ARTICLE TITLE
+        h2{
+          font-size: 1.333em;
+          font-weight: normal;
+        }
+        
+        // ARTICLE INFORMATION
+        .article_info{
+          padding: 0 .5em;
+          bottom: 1em;
+        }
+        
+        // COVER
+        .photo_holder{
+          // Link
+          a{
+            &:hover{
+              // Color Overlay
+              &:before{
+                background-color: rgba(0,0,0,.6);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+
+
+
+  ///////////////////////////////////////
+  // MEDIA QUERIES
+  ///////////////////////////////////////
+  @media screen and (min-width: $bp_desktop){
+    background: $id_color2;
+    
+    // Content Wrapper
+    .wrapper{
+      position: relative;
+      margin: 0 auto; 
+      max-width: $bp_desktop_max;
+      padding-left: 25.357143%;
+
+      // Proportional Scale
+      &:before{
+        content: '';
+        display: block;
+        position: relative;
+        width: 100%;
+        padding-bottom: 66.7304015296%;
+      }
+
+      .slider{
+        position: absolute;
+        height: 100%; width: 74.642857%;
+        top: 0; //left: 0;
+      }
+      
+      // Content
+      .content{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+      }
+    }
+
+
+    ////////////////////////
+    // IMAGE
+    .photo_holder{
+      height: 100%;
+
+      img{
+        //position: absolute;
+      }
+    }
+
+    ////////////////////////
+    // INFO HOLDER
+    .article_info{
+      position: absolute;
+      bottom: 2em;
+      padding: 0 6em;
+      color: #fff;
+    }
+
+    ////////////////////////
+    // TITLES
+    span.date{
+      color: #fff;
+    }
+
+    h2{
+      a{ color: #fff; }
+    }
+
+
+    ////////////////////////
+    // SECTION TEMPLATE
+    ////////////////////////
+    &.section_template{
+      .main_holder{
+        position: relative;
+        height: 75%;
+      }
+     .latest_holder{
+        position: relative;
+        display: block;
+        height: 25%;
+
+        h2{
+          font-size: 1em;
+        }
+      }
+    }
+  }
+
+
+  @media screen and (min-width: 980px){
+    height: 100vh;
+
+    // Content Wrapper
+    .wrapper{
+      height: 100%;
+
+      // Proportional Scale
+      &:before{
+        display: none;
+      }
+    }
+
+    ////////////////////////
+    // SECTION TEMPLATE
+    ////////////////////////
+    &.section_template{
+      .main_holder{
+      }
+     .latest_holder{
+        h2{
+          font-size: 1.333em;
+        }
+      }
+    }
+  }
+}
+
+
