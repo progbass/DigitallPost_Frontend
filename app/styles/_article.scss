@@ -1,0 +1,370 @@
+
+/////////////////////////////////////////////////////////////////////
+///////////////////////////   ARTICLE   /////////////////////////////
+/////////////////////////////////////////////////////////////////////
+#main_container.article_template{
+  header{
+    ////////////////////////
+    // IMAGE
+    .photo_holder{
+
+      // SHADOW OVERLAY
+      &:after{
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: 0;
+        width: 100%; height: 100%;
+        background-color: rgba(#000, .5);
+      }
+    }
+  }
+
+  #news_module{
+    display: none;
+  }
+
+  ///////////////////////////////////////
+  // MEDIA QUERIES
+  ///////////////////////////////////////
+  @media screen and (min-width: $bp_desktop){
+    #news_module{
+      display: block;
+    }
+  }
+}
+section.article_module{
+  padding-top: 0;
+  
+  // Section Circle Icon
+  .circle_icon{
+    display: none;
+  }
+
+
+
+  /////////////////////////
+  // ARTICLE
+  article{
+
+    /////////////////////////
+    /// ARTICLE CONTENT
+    .content_holder{
+      max-width: 25em;
+      margin: 0 auto 1em;
+      padding-bottom: 1em;
+      border-bottom: solid 1px #222;
+
+      h3{
+        margin: 1.5em auto 1em;
+      }
+    }
+
+
+    /////////////////////////
+    /// AUTHOR INFO
+    .author_holder{
+      margin: 0 auto 1em;
+      text-align: center;
+
+      .photo_holder{
+        display: inline-block;
+        max-width: 100%;
+        margin-right: .75em;
+
+        a{
+          display: inline-block;
+        }
+
+        img{
+          border-radius: 50%;
+        }
+      }
+
+      p{
+        display: inline-block;
+
+        a{
+          color: #222;
+          @include transition(color .08s ease-out);
+
+          // Hover
+          &:hover{
+            color: $id_color;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+    
+
+    /////////////////////////
+    /// ARTICLE TAGS
+    .tags_holder{
+      margin: 0 auto 1.5em;
+      color: $id_color;
+      font-family: $font_titles;
+      font-weight: 700;
+      font-size: .75em;
+      text-align: center;
+      text-transform: uppercase;
+
+      ol{
+        display: inline;
+        margin: 0 0 2em; padding: 0; border: 0;
+        list-style: none;
+        position: relative;
+        @include clearfix;
+        
+        // TAG
+        li{
+          display: inline;
+          margin-right: .5em;
+
+          // Link
+          a{
+            color: #222;
+            @include transition(color .08s ease-out);
+
+            //
+            &:hover{
+              color: $id_color;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+
+    /////////////////////////
+    /// SOCIAL SHARE NETWORKS
+    ol.socialShare_list{
+      margin: 0 0 2em; padding: 0; border: 0;
+      list-style: none;
+      position: relative;
+      @include clearfix;
+
+      // ITEM
+      li{
+        position: relative;
+        float: left;
+        width: 50%;
+        text-align: center;
+
+        // Link
+        a{
+          position: relative;
+          padding: .3em;
+          color: #FFF;
+          display: block;
+          background-color: $id_color2;
+          font-size: 1.5em;
+          @include transition(background .1s ease-out);
+
+          // Hide Text
+          span{
+            @extend .sr-only;
+          }
+
+          // Hover
+          &.active,
+          &:hover{
+            text-decoration: none;
+            background-color: darken($id_color2, 8%)
+          }
+
+          // Networks
+          &.fa-facebook{
+            background: #3a5794;
+
+            //
+            &:hover{
+              background: darken(#3a5794, 10%)
+            }
+          }
+          &.fa-twitter{
+            background: #1da8e1;
+
+            //
+            &:hover{
+              background: darken(#1da8e1, 10%)
+            }
+          }
+          &.fa-whatsapp{
+            background: #0fa000;
+
+            //
+            &:hover{
+              background: darken(#0fa000, 10%)
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+
+  /////////////////////////
+  // ASIDE
+  aside{
+    text-align: center;
+
+    margin-bottom: 2em;
+    .module{
+      margin-bottom: 2em;
+    }
+
+    // TITLE
+    h3.cat_name{
+      margin-bottom: .5em;
+    }
+
+    // LATEST NEWS
+    .latest_holder{
+      display: none;
+
+      // NEWS LIST
+      ol.latest_list{
+        // ITEM
+        li{
+          width: 100%;
+          margin: 0 0 1em !important;
+          padding: 0;
+
+          &:nth-child(4n+1){
+            @include column_article;
+            width: 100% !important;
+          }
+
+          span.cat_name{
+            a{ &:hover{ color: $id_color } }
+          }
+          span.date{
+            color: #7d7d7d
+          }
+        }
+      }
+    }
+  }
+
+
+
+  /////////////////////////
+  // RELATED NEWS
+  .relacionados_holder{
+    width: 100%;
+    margin-bottom: 2em;
+    padding: 1.5em 1em;
+    background: #111;
+    text-align: center;
+    
+    // TITLE
+    h3.cat_name{
+      margin: 0 auto 2em;
+    }
+
+    // NEWS LIST
+    ol{
+      // ITEM
+      li{
+        @include column_article;
+        border-color: #666;
+
+        &:last-child{
+          border-bottom: none;
+          padding-bottom: 0;
+          margin-bottom: 0;
+        }
+        
+        //
+        h4{
+          a{
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+
+
+
+
+  ///////////////////////////////////////
+  // MEDIA QUERIES
+  ///////////////////////////////////////
+  @media screen and (min-width: 600px){
+    padding-top: 2em;
+
+    .wrapper_container{
+      max-width: 40em;
+    }
+
+    /////////////////////////
+    // ARTICLE
+    article{
+
+      /////////////////////////
+      /// ARTICLE CONTENT
+      .content_holder{
+        max-width: none;
+      }
+
+      /////////////////////////
+      /// SOCIAL SHARE NETWORKS
+      ol.socialShare_list{
+        // ITEM
+        li{
+          width: 25%;
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: $bp_desktop){
+    .wrapper_container{
+      max-width: 80em;
+      @include clearfix;
+    }
+
+    /////////////////////////
+    // ARTICLE
+    article{
+      padding: 0 15px;
+      float: left; 
+      width: calc(100% - 315px);
+    }
+
+
+    /////////////////////////
+    // ASIDE
+    aside{
+      padding: 0 15px 0 0;
+      width: 315px;
+      float: left;
+
+      // LATEST NEWS
+      .latest_holder{
+        display: block;
+      }
+    }
+
+
+    /////////////////////////
+    // RELATED NEWS
+    .relacionados_holder{
+      padding-left: 0; padding-right: 0;
+      width: 100%;
+    }
+  }
+
+  @media screen and (min-width: 980px){
+  
+    // Section Circle Icon
+    .circle_icon{
+      display: block;
+    }
+
+    
+  }
+}
