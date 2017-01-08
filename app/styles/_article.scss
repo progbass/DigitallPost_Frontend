@@ -358,7 +358,7 @@ section.article_module{
     }
   }
 
-  @media screen and (min-width: 980px){
+  @media screen and (min-width: $bp_desktop_full){
   
     // Section Circle Icon
     .circle_icon{

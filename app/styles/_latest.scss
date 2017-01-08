@@ -40,10 +40,21 @@
 
   // Thumbnail
   .photo_holder{
+    position: relative;
     float: left;
     width: 34%;
     margin-right: 10px;
 
+    // Image Ratio
+    &:before{
+      content: '';
+      display: block;
+      position: relative;
+      width: 100%;
+      padding-bottom: 66.666%;
+    }
+
+    // Inner Shadow
     &:after{
       display: none;
     }
@@ -51,21 +62,23 @@
     // Image
     img{
       width: 100%;
-      height: auto !important;
+      height: auto ;
       @include transition(transform .2s ease-out);
+      @include alignCenter();
     }
 
     // Link
     a{
-      position: relative;
+      position: absolute;
       display: block;
-      width: 100%;
+      width: 100%; height: 100%;
+      top: 0; left: 0;
       overflow: hidden;
 
       // Hover
       &:hover{
         img{
-          @include transform(scale(1.02));
+          @include transform(scale(1.02) translate(-50%, -50%));
         }
       }
     }

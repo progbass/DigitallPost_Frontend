@@ -3,17 +3,44 @@
 /////////////////////////////////////////////////////////////////////
 ///////////////////////////   BANNERS   /////////////////////////////
 /////////////////////////////////////////////////////////////////////
-.banner_holder{
+#main_container .banner_holder{
   text-align: center;
   margin: 2px auto;
+
+  .wrapper_container{
+  	padding: 0;
+  }
+
+  .banner{
+  	display: none;
+  }
+
+  .box.banner{
+  	display: block;
+  }
 
 
   ///////////////////////////////////////
   // MEDIA QUERIES
   ///////////////////////////////////////
-  @media screen and (min-width: $bp_desktop){
-    //width: 74.642857%;
-    //margin-left: 25.357143%;
+  @media screen and (min-width: 728px){
+  	.box.banner{ display: none; }
+  	//.billboard.banner{ display: none; }
+    .super.banner{
+		display: block;
+	}
+  }
+
+  @media screen and (min-width: ($bp_desktop + 25em)){
+  	.super.banner{ display: none; }
+    .billboard.banner{ display: block; }
+  }
+
+  @media screen and (min-width: $bp_desktop_full){
+  	.wrapper_container{
+		padding-left: $layout_desktop_left_col;
+		padding-right: 0;
+	}
   }
 }
 

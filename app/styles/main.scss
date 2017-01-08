@@ -27,13 +27,19 @@ $menu_mobile_height: 40px;
 $menu_desktop_height: 65px;
 $menu_fixed_height: 50px;
 
+$bp_desktop: 56.25em;
+$bp_desktop_max: 87em;
+$bp_desktop_full: 70em;
+
+//$layout_desktop_right_col: calc(970px - 100%);
+$layout_desktop_left_col: 25.357143%;
+$layout_desktop_right_col: (100% - $layout_desktop_left_col);
+$layout_desktop_header_ratio: 50%;
+
 $id_color: #e12029;
 $id_color2: #191919;
 $font_main: 'Roboto', sans-serif;
 $font_titles: 'Oswald', sans-serif;
-
-$bp_desktop: 56.25em;
-$bp_desktop_max: 80em;
 
 
 // bower:scss
@@ -43,6 +49,7 @@ $bp_desktop_max: 80em;
 // endbower
 
 html{
+  position: relative;
   font-size: 16px;
 }
 
@@ -76,6 +83,18 @@ h4{
 
 
 
+///////////////////////////
+/// IMAGES
+/// Responsive Ratios
+img.horizontal{
+  width: 100% !important;
+  height: auto !important;
+}
+img.vertical{
+  width: auto !important;
+  height: 100% !important;
+}
+
 
 ///////////////////////////
 /// SECTIONS
@@ -101,7 +120,7 @@ section{
       content: '';
       display: block;
       position: absolute;
-      z-index: 15;
+      z-index: 4;
       top: -15px; left: 50%;
       @include transform(translateX(-50%));
       background-color: rgba($id_color, .8);
@@ -119,11 +138,11 @@ section{
     padding-left: 0; padding-right: 0;
   }
 
-  @media screen and (min-width: 980px){
+  @media screen and (min-width: $bp_desktop_full){
     // Icon
     .circle_icon{
-      left: 25.357143%; top: 0;
-      width: 74.642857%; 
+      left: $layout_desktop_left_col; top: 0;
+      width: $layout_desktop_right_col; 
     } 
   }
   
@@ -211,7 +230,12 @@ a.see_more,
   }
 }
 
-
+.photo_holder{
+  a{
+    width: 100%;
+    height: 100%;
+  } 
+}
 
 
 
@@ -235,8 +259,8 @@ a.see_more,
     ////////////////////////
     // MEDIA QUERIES
     ////////////////////////
-    @media screen and (min-width: 980px){
-      padding-left: 25.357143%;
+    @media screen and (min-width: $bp_desktop_full){
+      padding-left: $layout_desktop_left_col;
       padding-right: 0;
     }
   }
@@ -247,6 +271,7 @@ a.see_more,
 
 // IMPORT PIECES
 @import "menu";
+@import "menu_mobile";
 @import "news";
 @import "header";
 @import "banners";
@@ -349,11 +374,15 @@ section#category_module{
         }
 
         img{
+          width: 100%;
+          height: auto;
+          @include transition(transform .1s ease-out);
+          @include alignCenter();
+        }
+
+        a{
           position: absolute;
           top: 0; left: 0;
-          width: 100%;
-          height: auto !important;
-          @include transition(transform .1s ease-out);
         }
       }
       
@@ -505,8 +534,9 @@ section#video_module{
         // Image
         img{
           width: 100%;
-          height: auto !important;
+          height: auto;
           @include transition(transform .12s ease-out); 
+          @include alignCenter();
         }
 
         // Link
@@ -530,7 +560,7 @@ section#video_module{
           // Hover
           &:hover{
             img{
-              @include transform(scale(1.015));
+              //@include transform(scale(1.015) translate(-50%, -50%));
             }
           }
         }
@@ -688,12 +718,14 @@ section#explainers_module{
           position: absolute;
           left: -15px; top: 0;
           width: calc(100% + 30px);
+          height: 100%;
           
           // Thumnail
           img{
             width: 100%;
             height: auto;
             @include transition(transform .2s ease-out);
+            //@include alignCenter();
           }
 
           a{

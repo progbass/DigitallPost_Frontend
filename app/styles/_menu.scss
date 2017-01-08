@@ -20,22 +20,23 @@
 }
 #main_menu{
   position: absolute;
-  z-index: 10;
+  z-index: 3;
   top: 0; left: 0;
   width: 100%;
   height: $menu_mobile_height;
-  @include transition(background .2s ease-out);
+  @include transition(all .2s ease-out);
   //@include animation(menu_outro .6s ease-out);
   //@include animation-delay(2s);
 
 
-  ////////////////////////
+  ////////////////////////////////////////////////
   // MENU MODE: FIXED
+  ////////////////////////////////////////////////
   &.fixed{
     position: fixed;
     height: $menu_fixed_height;
     background: rgba(#fff, .96);
-    @include animation(menu_intro .25s ease-out);
+    // @include animation(menu_intro .25s ease-out);
 
 
     ////////////////////////
@@ -88,178 +89,27 @@
       }
     }
   }
+  ////////////////////////////////////////////////
+  ////////////////////////////////////////////////
 
 
 
-  ////////////////////////
-  /// MOBILE MENU
-  #mobile_menu{
-    //display: none;
-    position: fixed;
-    overflow: auto;
-    width: 100%; height: 100%;
-    //min-height: 400px;
-    top: 0; left: -100%;
-    z-index: -1;
-    padding: 3.5em 1em 1em;
-    background: #000;
-    color: #fff;
-    font-family: $font_titles;
-    font-size: 1.1em;
-    font-weight: normal;
-    letter-spacing: .07em;
-    @include transition(left .5s ease-in-out);
 
-    &.visible{
-      display: block;
-      left: 0;
-    }
+  ////////////////////////////////////////////////
+  // MENU MODE: MOBILE MENU
+  ////////////////////////////////////////////////
+  &.mobileMenu{
+    z-index: 5;
 
-    // LINKS
-    a{
-      color: #fff;
-      @include transition(color .1s ease);
-
-      //
-      &:hover{
-        color: $id_color;
-        text-decoration: none;
-      }
-    }
-
-
-    // ALL LISTS
-    ul{
-      position: relative;
-      list-style: none;
-      margin: 0 0 .875em; padding: .875em 0 0; border: 0;
-      border-top: solid 1px #555;
-      text-transform: uppercase;
-
-      li{
-        position: relative;
-        margin-bottom: .1em;
-      }
-    }
-
-
-    // HEADLINERS LIST
-    ul.headliners{
-      
-      li{
-
-        a{
-          color: #555;
-
-          // hover
-          &:hover{
-            color: $id_color;
-          }
-        }
-      }
-    }
-
-    // SOCIAL NETWORK LIST
-    ul.social{
-      
-      li{
-        display: inline-block;
-        width: 2em;
-        background: #3a5794;
-        border-radius: 50%;
-        @include transition(background .1s ease-out);
-
-        //
-        &:before{
-          display: block;
-          content: '';
-          position: relative;
-          width: 100%;
-          padding-bottom: 100%;
-        }
-
-
-        // Networks
-        &.facebook{
-          background: #3a5794;
-
-          //
-          &:hover{
-            background: darken(#3a5794, 10%)
-          }
-        }
-        &.twitter{
-          background: #1da8e1;
-
-          //
-          &:hover{
-            background: darken(#1da8e1, 10%)
-          }
-        }
-        &.youtube{
-          background: #e83235;
-
-          //
-          &:hover{
-            background: darken(#e83235, 10%)
-          }
-        }
-
-        a{
-          display: block;
-          text-align: center;
-          width: 100%; //height: 100%;
-          @include alignCenter(true, true);
-
-          // hover
-          &:hover{
-            color: #fff;
-          }
-
-          // Hide Text
-          span{
-            @extend .sr-only;
-          }
-        }
-      }
-    }
-
-
-    // FORM
-    form{
-      position: relative;
-      margin: 0 0 .875em; padding: .875em 0 0; border: 0;
-      border-top: solid 1px #555;
-
-      label{
-        @extend .sr-only;
-      }
-
-      input[type=text]{
-        position: relative;
-        margin: 0; padding: .42em 1em .35em 2.5em; border: 0;
-        border-radius: 1.25em;
-        color: #777;
-        font-family: $font_main;
-        line-height: 1.5em;
-        background: #fff url($images-path+'search_icon_lupa.svg') no-repeat .75em center;
-        background-size: 7%;
-      }
-    }
-
-    // Legales
-    .legales{
-      font-family: $font_main;
-      font-size: .75em;
-      line-height: 1.4em;
-      
-      // Links
-      a{
-        text-transform: uppercase;
-        text-decoration: underline
-      }
+    .wrapper_container{
+      background: rgba(#000, .9);
+      padding: 0 1em;
     }
   }
+  ////////////////////////////////////////////////
+  ////////////////////////////////////////////////
+  
+
 
 
   ////////////////////////
@@ -377,11 +227,26 @@
   ///////////////////////////////////////
   // MEDIA QUERIES
   ///////////////////////////////////////
-  @media screen and (min-width: 42em){
-    ////////////////////////
-    /// MOBILE MENU
-    #mobile_menu{
-      display: none;
+  @media screen and (min-width: 45.5em){
+    .wrapper_container{
+      padding: 0 0 0 30%;
+    }
+
+    ////////////////////////////////////////////////
+    // MENU MODE: FIXED
+    ////////////////////////////////////////////////
+    &.fixed{
+      .wrapper_container{
+        padding-left: 0;
+      }
+    }
+    ////////////////////////////////////////////////
+  }
+
+
+  @media screen and (min-width: $bp_desktop){
+    .wrapper_container{
+      padding-left: $layout_desktop_left_col;
     }
 
 
@@ -486,15 +351,25 @@
     }
   }
 
-  @media screen and (min-width: $bp_desktop){
-    .wrapper_container{
-      //padding-left: 25.357143%;
-    }
-    
-  }
-
-  @media screen and (min-width: 980px){
+  @media screen and (min-width: $bp_desktop_full){
     height: $menu_desktop_height;
+
+    .wrapper_container{
+      padding-left: $layout_desktop_left_col;
+    }
+
+
+    ////////////////////////////////////////////////
+    // MENU MODE: FIXED
+    ////////////////////////////////////////////////
+    &.fixed{
+      .wrapper_container{
+        padding-left: $layout_desktop_left_col;
+      }
+    }
+    ////////////////////////////////////////////////
+    
+    
 
     ////////////////////////
     // MENU ICON
