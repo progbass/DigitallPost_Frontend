@@ -1,6 +1,6 @@
 (function($){
 	var mobile_mode = true;
-	var bp_desktop = 2000;
+	var bp_desktop = 900;
 	var menu_open = false;
 	var menu_hide_interval = 0;
 	var menu_page_lastPos = 0;

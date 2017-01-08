@@ -20,7 +20,7 @@
 }
 #main_menu{
   position: absolute;
-  z-index: 3;
+  z-index: 5;
   top: 0; left: 0;
   width: 100%;
   height: $menu_mobile_height;
@@ -353,6 +353,7 @@
 
   @media screen and (min-width: $bp_desktop_full){
     height: $menu_desktop_height;
+    z-index: 4;
 
     .wrapper_container{
       padding-left: $layout_desktop_left_col;
@@ -369,7 +370,7 @@
     }
     ////////////////////////////////////////////////
     
-    
+
 
     ////////////////////////
     // MENU ICON

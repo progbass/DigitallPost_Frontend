@@ -120,11 +120,11 @@ section{
       content: '';
       display: block;
       position: absolute;
-      z-index: 4;
-      top: -15px; left: 50%;
+      z-index: 2;
+      top: -16px; left: 50%;
       @include transform(translateX(-50%));
       background-color: rgba($id_color, .8);
-      width: 30px; height: 30px;
+      width: 32px; height: 32px;
       border-radius: 12em;
     }
   }
@@ -333,7 +333,7 @@ section#category_module{
         h4{
           background: $id_color;
           padding: .1em .5em;
-          z-index: 10;
+          z-index: 1;
           position: relative;
 
           a{
