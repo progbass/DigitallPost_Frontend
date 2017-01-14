@@ -102,6 +102,53 @@
 
 
 
+    <!-- SEARCH LIGHTBOX -->
+    <div id="search_module">
+      <!-- OVERLAY -->
+      <div class="overlay"></div>
+
+      <div class="content_holder">
+        <!-- SEARCH FORM -->
+        <form action="#" method="GET" id="search_frm">
+          <fielset>
+            <label for="search_txt">Buscar</label>
+            <input type="text" id="search_txt" name="search_txt" value="" />
+          </fielset>
+
+          <div class="status">
+            Escribe al menos 3 letras para buscar.
+          </div>
+        </form>
+        <!-- /SEARCH FORM -->
+
+        
+        <!-- NEWS -->
+        <ol>
+          <!-- Item -->
+          <li>
+            <h4><a href="#">Oro se hunde ante euforia por el riesgo</a></h4>
+            <span class="cat_name"><a href="#">Noticias</a></span>
+            <span class="date">Hace 20 Minutos</span>
+          </li>
+          <!-- Item -->
+
+          <li>
+            <h4><a href="#">Las exportaciones de Am&eacute;rica Latina caer&aacute;n un 6%</a></h4>
+            <span class="cat_name"><a href="#">Deportes</a></span>
+            <span class="date">Hace 30 Minutos</span>
+          </li>
+          <li>
+            <h4><a href="#">La incertidumnre reina en Venezuela tras el retiro de la mitad de su dinero en efectivo</a></h4>
+            <span class="cat_name"><a href="#">Negocios</a></span>
+            <span class="date">Hace 1 Hora</span>
+          </li>
+        </ol>
+        <!-- /NEWS -->
+      </div>
+    </div>
+    <!-- /SEARCH LIGHTBOX -->
+
+
 
 
     <div id="main_container" class="fluid_container">
@@ -111,89 +158,96 @@
       <div id="main_menu">
         <div class="wrapper_container">
 
-          <!-- MENU ICON -->
-          <div class="menu_icon">
-            <a href="#"><span class="glyphicon glyphicon-menu-hamburger"></span></a>
-          </div>
-          <!-- /MENU ICON -->
+          <!-- NEWSLETTER -->
+          <div id="newsletter_head">
+            <!-- SEARCH BUTTON -->
+            <a class="searchWindowOpen_btn">Buscar</a>
+            <!-- /SEARCH BUTTON -->
+            
+            <!-- Newsletter -->
+            <a href="#" class="newsletter">Inscr&iacute;bete a nuestro <span>newsletter</span></a>
 
 
-          <!-- LOGO -->
-          <div class="logo">
-            <a href="#">Digitall Post</a>
-          </div>
-          <!-- /LOGO -->
-
-          
-          <!-- SEARCH FORM -->
-          <form action="#" method="GET" id="search_frm">
-            <fielset>
-              <label for="search_txt">Buscar</label>
-              <input type="text" id="search_txt" name="search_txt" value="" />
-            </fielset>
-          </form>
-          <!-- /SEARCH FORM -->
-
-
-          <!-- NAVIGATION -->
-          <nav>
-            <ul>
-              <li>
-                <a href="#">Noticias</a>
-                <ul class="submenu">
-                  <li><a href="#">Subcategor&iacute;a 1</a></li>
-                  <li><a href="#">Subcategor&iacute;a 2</a></li>
-                  <li><a href="#">Subcategor&iacute;a 3</a></li>
-                </ul>
+            <!-- SOCIAL NETWORKS -->
+            <ul class="social">
+              <li class="facebook">
+                <a href="#" class="fa fa-facebook"><span >Facebook</span></a>
               </li>
-
-              <li>
-                <a href="#">Negocios</a>
-
-                <ul class="submenu">
-                  <li><a href="#">Carrera</a></li>
-                  <li><a href="#">Emprendimiento</a></li>
-                  <li><a href="#">Dinero</a></li>
-                </ul>
+              <li class="twitter">
+                <a href="#" class="fa fa-twitter"><span>Twitter</span></a>
               </li>
-
-              <li>
-                <a href="#">Deportes</a>
-              </li>
-
-              <li>
-                <a href="#">Tech</a>
-                <ul class="submenu">
-                  <li><a href="#">Subcategor&iacute;a 1</a></li>
-                  <li><a href="#">Subcategor&iacute;a 2</a></li>
-                  <li><a href="#">Subcategor&iacute;a 3</a></li>
-                </ul>
-              </li>
-
-              <li>
-                <a href="#">Videos</a>
-                <ul class="submenu">
-                  <li><a href="#">Subcategor&iacute;a 1</a></li>
-                  <li><a href="#">Subcategor&iacute;a 2</a></li>
-                </ul>
-              </li>
-
-              <li>
-                <a href="#">+M&aacute;s</a>
-                
-                <ul class="submenu">
-                  <li><a href="#">Subcategor&iacute;a 1</a></li>
-                  <li><a href="#">Subcategor&iacute;a 2</a></li>
-                  <li><a href="#">Subcategor&iacute;a 3</a></li>
-                </ul>
-              </li>
-
-              <li>
-                <a href="#">XY Post</a>
+              <li class="youtube">
+                <a href="#" class="fa fa-youtube"><span>Youtube</span></a>
               </li>
             </ul>
-          </nav>
-          <!-- /NAVIGATION -->
+            <!-- /SOCIAL NETWORKS -->
+          </div>
+          <!-- /NEWSLETTER -->
+
+
+          <!-- MENU -->
+          <div class="menu_holder">
+            <!-- MENU ICON -->
+            <div class="menu_icon">
+              <a href="#"><span class="glyphicon glyphicon-menu-hamburger"></span></a>
+            </div>
+            <!-- /MENU ICON -->
+
+
+            <!-- LOGO -->
+            <div class="logo">
+              <a href="#">Digitall Post</a>
+            </div>
+            <!-- /LOGO -->
+
+
+            <!-- NAVIGATION -->
+            <nav>
+              <ul>
+                <li>
+                  <a href="#">Noticias</a>
+                </li>
+
+                <li>
+                  <a href="#">Negocios</a>
+
+                  <ul class="submenu">
+                    <li><a href="#">Carrera</a></li>
+                    <li><a href="#">Emprendimiento</a></li>
+                    <li><a href="#">Dinero</a></li>
+                  </ul>
+                </li>
+
+                <li>
+                  <a href="#">Deportes</a>
+                </li>
+
+                <li>
+                  <a href="#">Tech</a>
+                </li>
+
+                <li>
+                  <a href="#">Videos</a>
+                </li>
+
+                <li>
+                  <a href="#">+M&aacute;s</a>
+                  
+                  <ul class="submenu">
+                    <li><a href="#">Cultura</a></li>
+                    <li><a href="#">Sociedad</a></li>
+                    <li><a href="#">Newsletter</a></li>
+                  </ul>
+                </li>
+
+                <li>
+                  <a href="#">XY Post</a>
+                </li>
+              </ul>
+            </nav>
+            <!-- /NAVIGATION -->
+          </div>
+          <!-- /MENU -->
 
         </div>
       </div>
@@ -483,7 +537,7 @@
 
 
       <!-- VIDEO SLIDER -->
-      <section id="video_module">
+      <section id="videoLatest_module">
         <!-- Circle Icon -->
         <span class="circle_icon"></span>
         
@@ -892,6 +946,153 @@
                 </div>
               </div>
             </li>
+
+            <li>
+              <div class="photo_holder">
+                <a href="#"><img src="images/home/latest_8.jpg" alt=""></a>
+              </div>
+              
+              <div class="info_holder">
+                <h4><a href="#">Joven gana concurso por aplicación que facilita uso de transporte público</a></h4>
+
+                <div class="meta_holder">
+                  <span class="cat_name"><a href="#">Carrera</a></span>
+                  <span class="date">Hace 2 Horas</span>
+                </div>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+      <!-- /LATEST -->
+
+
+
+
+      <!-- FEATURED VIDEO -->
+      <section id="videoFeatured_module">
+        <!-- Circle Icon -->
+        <span class="circle_icon"></span>
+        
+        <div class="wrapper_container">
+
+          <!-- Video -->
+          <div class="content_holder">
+
+            <!-- Title -->
+            <h3 class="cat_name">Video</h3>
+            
+            <!-- Photo -->
+            <div class="photo_holder"></div>
+            
+            <!-- Video -->
+            <div class="video_holder">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/NrmMk1Myrxc" frameborder="0" allowfullscreen></iframe>
+            </div>
+
+            <!-- Info -->
+            <div class="info_holder">
+              <h4><a href="#">C&oacute;mo est&aacute; afectado el triunfo de Trump a nuestra ciudad?</a></h4>
+              <div class="meta_holder">
+                <span class="cat_name"><a href="#">Noticias</a></span>
+                <span class="date">Hace 20 Minutos</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Button: More -->
+          <a href="#" class="see_more">M&aacute;s Videos</a>
+        </div>
+      </section>
+      <!-- /FEATURED VIDEO -->
+
+      
+
+      <!-- LATEST -->
+      <section id="loadMore_module" class="">
+        <span class="circle_icon"></span>
+
+        <div class="wrapper_container">
+          <ol class="latest_list">
+
+            <!-- Ejemplo
+            <li>
+              <div class="photo_holder">
+                <a href="#"><img src="images/home/latest_4.jpg" alt="Cristiano Ronaldo"></a>
+              </div>
+              
+              <div class="info_holder">
+                <h4><a href="#">Poker dorado de Cristiano Ronaldo</a></h4>
+
+                <div class="meta_holder">
+                  <span class="cat_name"><a href="#">Deportes</a></span>
+                  <span class="date">Hace 20 Minutos</span>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="photo_holder">
+                <a href="#"><img src="images/home/latest_3.jpg" alt="Cristiano Ronaldo"></a>
+              </div>
+              
+              <div class="info_holder">
+                <h4><a href="#">Peregrinos superan los 7.1 millones en la Bas&iacute;lica</a></h4>
+
+                <div class="meta_holder">
+                  <span class="cat_name"><a href="#">Noticias</a></span>
+                  <span class="date">Hace 20 Minutos</span>
+                </div>
+              </div>
+            </li>
+
+
+            <li>
+              <div class="photo_holder">
+                <a href="#"><img src="images/home/latest_2.jpg" alt="Cristiano Ronaldo"></a>
+              </div>
+              
+              <div class="info_holder">
+
+                <h4><a href="#">PRI y PAN: dar marco legal a Fuerzas Armadas</a></h4>
+
+                <div class="meta_holder">
+                  <span class="cat_name"><a href="#">Noticias</a></span>
+                  <span class="date">Hace 20 Minutos</span>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="photo_holder">
+                <a href="#"><img src="images/home/latest_5.jpg" alt=""></a>
+              </div>
+              
+              <div class="info_holder">
+                <h4><a href="#">CNDH pide que Ejército retome sus funciones</a></h4>
+
+                <div class="meta_holder">
+                  <span class="cat_name"><a href="#">Nticias</a></span>
+                  <span class="date">Hace 2 Horas</span>
+                </div>
+              </div>
+            </li>
+
+            <li class="video_type">
+              <div class="photo_holder">
+                <a href="#"><img src="images/home/latest_1.jpg" alt="Cristiano Ronaldo"></a>
+              </div>
+              
+              <div class="info_holder">
+                <h4><a href="#">Oficial: Cristiano Ronaldo se lleva el Bal&oacute;n de Oro 2016</a></h4>
+
+                <div class="meta_holder">
+                  <span class="cat_name"><a href="#">Deportes</a></span>
+                  <span class="date">Hace 20 Minutos</span>
+                </div>
+              </div>
+            </li>  
+            -->          
           </ol>
 
           <!-- Button: More -->
@@ -899,8 +1100,6 @@
         </div>
       </section>
       <!-- /LATEST -->
-
-
     </div>
 
 

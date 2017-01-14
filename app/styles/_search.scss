@@ -1,0 +1,120 @@
+@include keyframes(search_intro){
+	from{
+		opacity: 0;
+	},
+	to{
+		opacity: 1;
+	}
+}
+@include keyframes(search_outro){
+	from{
+		opacity: 1;
+	},
+	to{
+		opacity: 0;
+	}
+}
+#search_module{
+	display: none;
+	position: fixed;
+	top: 0; left: 0;
+	width: 100%; height: 100%;
+	z-index: 11;
+	@include animation(search_outro .28s ease);
+
+	.overlay{
+		width: 100%; height: 100%;
+		background: rgba(#000, .96);
+	}
+	
+
+	/////////////////
+	// VISIBLE MODE
+	&.visible{
+		display: block;
+		@include animation(search_intro .28s ease)
+	}
+
+
+	/////////////////
+	// FORM CONTAINER
+	.content_holder{
+		width: 75%;
+		max-width: 480px;
+        @include alignCenter();
+	}
+
+	/////////////////
+	// FORM
+	form{
+		position: relative;
+		text-align: center;
+		font-family: $font_titles;
+		font-weight: 300;
+
+		label{
+			display: block;
+			color: #fff;
+			text-transform: uppercase;
+			font-weight: 300;
+			font-size: 1.953em;
+		}
+
+		input[type=text]{
+			width: 75%;
+			border: none; padding: .25em .65em; margin: 0 auto;
+			line-height: 1em;
+			color: $id_color2;
+			text-transform: uppercase;
+			font-size: 1.25em;
+
+		}
+
+		.status{
+			margin-top: .5em;
+			color:$id_color;
+			text-transform: uppercase;
+			font-size: 1.25em;
+			font-weight: 400;
+		}
+	}
+
+
+	/////////////////
+	// NEWS
+	ol{
+		position: relative;
+		list-style: none;
+		margin: 2em auto 0; padding: 0; border: none;
+
+		li{
+			position: relative;
+			padding-bottom: .5em;
+			margin-bottom: .5em;
+			border-bottom: solid 1px #fff;
+
+			&:last-child{
+				border-bottom: none;
+				margin-bottom: 0;
+				padding-bottom: 0;
+			}
+
+			h4{
+				margin: 0 auto;
+				font-size: 1em;
+
+				a{
+					color: #fff;
+					@include transition(color .2s ease);
+
+					// Hover
+					&:hover{
+						color: $id_color;
+						text-decoration: none;
+					}
+				}
+			}
+		}
+	}
+}
+

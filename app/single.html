@@ -104,6 +104,53 @@
 
 
 
+    <!-- SEARCH LIGHTBOX -->
+    <div id="search_module">
+      <!-- OVERLAY -->
+      <div class="overlay"></div>
+
+      <div class="content_holder">
+        <!-- SEARCH FORM -->
+        <form action="#" method="GET" id="search_frm">
+          <fielset>
+            <label for="search_txt">Buscar</label>
+            <input type="text" id="search_txt" name="search_txt" value="" />
+          </fielset>
+
+          <div class="status">
+            Escribe al menos 3 letras para buscar.
+          </div>
+        </form>
+        <!-- /SEARCH FORM -->
+
+        
+        <!-- NEWS -->
+        <ol>
+          <!-- Item -->
+          <li>
+            <h4><a href="#">Oro se hunde ante euforia por el riesgo</a></h4>
+            <span class="cat_name"><a href="#">Noticias</a></span>
+            <span class="date">Hace 20 Minutos</span>
+          </li>
+          <!-- Item -->
+
+          <li>
+            <h4><a href="#">Las exportaciones de Am&eacute;rica Latina caer&aacute;n un 6%</a></h4>
+            <span class="cat_name"><a href="#">Deportes</a></span>
+            <span class="date">Hace 30 Minutos</span>
+          </li>
+          <li>
+            <h4><a href="#">La incertidumnre reina en Venezuela tras el retiro de la mitad de su dinero en efectivo</a></h4>
+            <span class="cat_name"><a href="#">Negocios</a></span>
+            <span class="date">Hace 1 Hora</span>
+          </li>
+        </ol>
+        <!-- /NEWS -->
+      </div>
+    </div>
+    <!-- /SEARCH LIGHTBOX -->
+
+
 
 
     <div id="main_container" class="fluid_container">
@@ -113,89 +160,96 @@
       <div id="main_menu">
         <div class="wrapper_container">
 
-          <!-- MENU ICON -->
-          <div class="menu_icon">
-            <a href="#"><span class="glyphicon glyphicon-menu-hamburger"></span></a>
-          </div>
-          <!-- /MENU ICON -->
+          <!-- NEWSLETTER -->
+          <div id="newsletter_head">
+            <!-- SEARCH BUTTON -->
+            <a class="searchWindowOpen_btn">Buscar</a>
+            <!-- /SEARCH BUTTON -->
+            
+            <!-- Newsletter -->
+            <a href="#" class="newsletter">Inscr&iacute;bete a nuestro <span>newsletter</span></a>
 
 
-          <!-- LOGO -->
-          <div class="logo">
-            <a href="#">Digitall Post</a>
-          </div>
-          <!-- /LOGO -->
-
-          
-          <!-- SEARCH FORM -->
-          <form action="#" method="GET" id="search_frm">
-            <fielset>
-              <label for="search_txt">Buscar</label>
-              <input type="text" id="search_txt" name="search_txt" value="" />
-            </fielset>
-          </form>
-          <!-- /SEARCH FORM -->
-
-
-          <!-- NAVIGATION -->
-          <nav>
-            <ul>
-              <li>
-                <a href="#">Noticias</a>
-                <ul class="submenu">
-                  <li><a href="#">Subcategor&iacute;a 1</a></li>
-                  <li><a href="#">Subcategor&iacute;a 2</a></li>
-                  <li><a href="#">Subcategor&iacute;a 3</a></li>
-                </ul>
+            <!-- SOCIAL NETWORKS -->
+            <ul class="social">
+              <li class="facebook">
+                <a href="#" class="fa fa-facebook"><span >Facebook</span></a>
               </li>
-
-              <li>
-                <a href="#">Negocios</a>
-
-                <ul class="submenu">
-                  <li><a href="#">Carrera</a></li>
-                  <li><a href="#">Emprendimiento</a></li>
-                  <li><a href="#">Dinero</a></li>
-                </ul>
+              <li class="twitter">
+                <a href="#" class="fa fa-twitter"><span>Twitter</span></a>
               </li>
-
-              <li>
-                <a href="#">Deportes</a>
-              </li>
-
-              <li>
-                <a href="#">Tech</a>
-                <ul class="submenu">
-                  <li><a href="#">Subcategor&iacute;a 1</a></li>
-                  <li><a href="#">Subcategor&iacute;a 2</a></li>
-                  <li><a href="#">Subcategor&iacute;a 3</a></li>
-                </ul>
-              </li>
-
-              <li>
-                <a href="#">Videos</a>
-                <ul class="submenu">
-                  <li><a href="#">Subcategor&iacute;a 1</a></li>
-                  <li><a href="#">Subcategor&iacute;a 2</a></li>
-                </ul>
-              </li>
-
-              <li>
-                <a href="#">+M&aacute;s</a>
-                
-                <ul class="submenu">
-                  <li><a href="#">Subcategor&iacute;a 1</a></li>
-                  <li><a href="#">Subcategor&iacute;a 2</a></li>
-                  <li><a href="#">Subcategor&iacute;a 3</a></li>
-                </ul>
-              </li>
-
-              <li>
-                <a href="#">XY Post</a>
+              <li class="youtube">
+                <a href="#" class="fa fa-youtube"><span>Youtube</span></a>
               </li>
             </ul>
-          </nav>
-          <!-- /NAVIGATION -->
+            <!-- /SOCIAL NETWORKS -->
+          </div>
+          <!-- /NEWSLETTER -->
+
+
+          <!-- MENU -->
+          <div class="menu_holder">
+            <!-- MENU ICON -->
+            <div class="menu_icon">
+              <a href="#"><span class="glyphicon glyphicon-menu-hamburger"></span></a>
+            </div>
+            <!-- /MENU ICON -->
+
+
+            <!-- LOGO -->
+            <div class="logo">
+              <a href="#">Digitall Post</a>
+            </div>
+            <!-- /LOGO -->
+
+
+            <!-- NAVIGATION -->
+            <nav>
+              <ul>
+                <li>
+                  <a href="#">Noticias</a>
+                </li>
+
+                <li>
+                  <a href="#">Negocios</a>
+
+                  <ul class="submenu">
+                    <li><a href="#">Carrera</a></li>
+                    <li><a href="#">Emprendimiento</a></li>
+                    <li><a href="#">Dinero</a></li>
+                  </ul>
+                </li>
+
+                <li>
+                  <a href="#">Deportes</a>
+                </li>
+
+                <li>
+                  <a href="#">Tech</a>
+                </li>
+
+                <li>
+                  <a href="#">Videos</a>
+                </li>
+
+                <li>
+                  <a href="#">+M&aacute;s</a>
+                  
+                  <ul class="submenu">
+                    <li><a href="#">Cultura</a></li>
+                    <li><a href="#">Sociedad</a></li>
+                    <li><a href="#">Newsletter</a></li>
+                  </ul>
+                </li>
+
+                <li>
+                  <a href="#">XY Post</a>
+                </li>
+              </ul>
+            </nav>
+            <!-- /NAVIGATION -->
+          </div>
+          <!-- /MENU -->
 
         </div>
       </div>
@@ -207,31 +261,33 @@
       <!-- MAIN ARTICLE -->
       <header>
         <div class="wrapper">
-          <div class="slider">
+          <div class="position">
+            <div class="slider">
 
-            <!-- Top Article -->
-            <div class="main_holder">
-              <div class="content">
+              <!-- Top Article -->
+              <div class="main_holder">
+                <div class="content">
 
-                <!-- Photo -->
-                <div class="photo_holder">
-                  <img src="images/home/article_header.jpg" alt="">
-                </div>
-
-                <!-- Info -->
-                <div class="article_info">
-                  <h2>Más de tres millones de peregrinos Arribaron la Basílica</h2>
-
-                  <div class="meta_holder">
-                    <span class="cat_name"><a href="#">Noticias</a></span>
-                    <span class="date">Hace 20 Minutos</span>
+                  <!-- Photo-->
+                  <div class="photo_holder">
+                    <a href="#"><img src="images/home/article_header.jpg" alt=""></a>
                   </div>
+
+                  <!-- Info -->
+                  <div class="article_info">
+                    <h2><a href="#">Más de tres millones de peregrinos Arribaron la Basílica</a></h2>
+
+
+                    <div class="meta_holder">
+                      <span class="cat_name"><a href="#">Noticias</a></span>
+                      <span class="date">Hace 20 Minutos</span>
+                    </div>
+                  </div>
+
                 </div>
-
               </div>
-            </div>
-            <!-- /Top Article -->
 
+            </div>
           </div>
         </div>
       </header>
@@ -346,6 +402,17 @@
 
           <!-- ARTICLE -->
           <article>
+
+            <!-- Author -->
+            <div class="author_holder">
+              <div class="photo_holder">
+                <a href="#"><img src="images/home/author.jpg" alt="Author Name" ></a>
+              </div>
+              <p>Por: <a href="#">Ju&aacute;n Francisco</a> <a href="#"><span>@JuanFran</span></a></p>
+            </div>
+            <!-- /Author -->
+
+
             <!-- Social Share -->
             <ol class="socialShare_list">
               <li><a href="#" class="fa fa-facebook"><span>Facebook</span></a></li>
@@ -361,7 +428,14 @@
 
               <p>La jurisdicción precisó que los fieles se encuentran a lo largo de la Calzada de Guadalupe y calles aledañas, al interior de la Basílica y en los alrededores del templo mariano.</p>
 
-              <p>Hasta las 15:00 horas se habían realizado 761 atenciones en los 25 puntos de servicio médico ubicados en zonas estratégicas y las causas más comunes son: deshidratación, heridas en los pies, agotamiento y alteraciones en la presión arterial.</p>
+              <!-- Responsive: Video -->
+              <div class="video_holder">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/NrmMk1Myrxc" frameborder="0" allowfullscreen></iframe>
+              </div>
+              <!-- /Responsive: Video -->
+              
+
+              <p>Hasta las 15:00 horas se habían realizado 761 atenciones en los 25 puntos de servicio médico ubicados en zonas estratégicas <a href="#">https://www.youtube.com/watch?v=NrmMk1Myrxc</a> y las causas más comunes son: deshidratación, heridas en los pies, agotamiento y alteraciones en la presión arterial.</p>
 
               <p>Asimismo, se realizó el perifoneo de ocho personas extraviadas, seis de ellas fueron localizadas y se encuentran reunidas con sus familiares.</p>
 
@@ -380,6 +454,12 @@
               <p>En ese sentido, 73.8 por ciento de las personas consultadas prefiere ver por televisión los actos que se realizan en honor a la Virgen del Tepeyac.</p>
 
               <p>Aunque 64 por ciento de la población festeja a la Guadalupana cada 12 de diciembre, y 87 de cada cien recuerdan que en 1531 se le apareció al indio Juan Diego en el cerro del Tepeyac, no todos los mexicanos son guadalupanos.</p>
+
+              <!-- Responsive: Video -->
+              <div class="video_holder">
+                <iframe src="https://player.vimeo.com/video/196277011" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+              </div>
+              <!-- /Responsive: Video -->
 
               <p>Es decir, de los 600 ciudadanos entrevistados vía telefónica por todo México 36.1 por ciento no la festejan y 13.1 por ciento no tenían idea de la aparición de la virgen.</p>
 
@@ -416,7 +496,7 @@
               <div class="photo_holder">
                 <a href="#"><img src="images/home/author.jpg" alt="Author Name" ></a>
               </div>
-              <p>Por: <a href="#">Ju&aacute;n Francisco</a></p>
+              <p>Por: <a href="#">Ju&aacute;n Francisco</a> <a href="#"><span>@JuanFran</span></a></p>
             </div>
             <!-- /Author -->
 
@@ -430,12 +510,37 @@
             </ol>
             <!-- /Social Share -->
           </article>
-          <!-- /ASIDE -->
+          <!-- /ARTICLE -->
           
+
+
           <!-- ASIDE -->
           <aside>
+
+            <!-- NEWSLETTER -->
+            <div class="newsletter _holder module">
+              <div class="title_holder">
+                <h4>Inscr&iacute;bete a nuestro<br/><span>Newsletter</span></h4>
+              </div>
+
+              <form class="newsletter_sidebar_frm" method="POST" action="#" >
+                <fieldset>
+                  <div class="data_holder">
+                    <label for="nl_sidebar_mail">Mail</label>
+                    <input type="text" name="nl_sidebar_mail" id="nl_sidebar_mail" value="" >
+                  </div>
+
+                  <div class="data_holder">
+                    <input type="submit" name="nl_sidebar_submit" id="nl_sidebar_submit" value="Inscribirse" >
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+            <!-- /NEWSLETTER -->
+
+
             <!-- BANNER -->
-            <div class="banner_holder module">
+            <div class="banners_holder module">
               <img src="images/home/banner_box.jpg" alt="Box Banner">
             </div>
             <!-- /BANNER -->

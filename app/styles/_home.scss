@@ -1,0 +1,867 @@
+
+
+
+/////////////////////////////////////////////////////////////////////
+///////////////////////   CATEGORY LATEST   /////////////////////////
+/////////////////////////////////////////////////////////////////////
+section#category_module{
+  display: none;
+
+  ///////////////
+  /// TITLE
+  h3{
+    margin: 0 auto .5em;
+    color: $id_color;
+    font-size: 1.075em;
+    font-family: $font_main;
+    font-weight: 700;
+  }
+
+  ///////////////
+  /// LIST
+  ol{
+    position: relative;
+    list-style: none;
+    margin: 0; padding: 0; border: 0;
+    
+    ///////////////
+    /// LIST ITEM
+    li{
+      position: relative;
+      margin-bottom: .75em;
+      padding-bottom: .5em;
+      border-bottom: solid 2px #a5a5a5;
+      cursor: pointer;
+      overflow: hidden;
+
+      @include transition(height .2s ease-out);
+
+      &:last-child{
+        border-bottom: none;
+      }
+
+
+      //////////////////
+      /// HOVER
+      &:hover{
+        // Title
+        h4{
+          background: $id_color;
+          padding: .1em .5em;
+          z-index: 1;
+          position: relative;
+
+          a{
+            color: #FFF;
+          }
+        }
+
+        img{
+          @include transform(scale(1.05));
+        }
+      }
+
+      //////////////////
+      /// FIRST ITEM
+      &:first-child{
+        // Title
+        h4{
+          font-size: 1.333em;
+          line-height: 1.1;
+        }
+      }
+      
+
+      // Thumbnail
+      .photo_holder{
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        margin-bottom: .75em;
+
+        // Responsive Proportions
+        &:before{
+          content: '';
+          position: relative;
+          display: block;
+          width: 100%;
+          padding-bottom: 66.666%;
+        }
+
+        img{
+          width: 100%;
+          height: auto;
+          @include transition(transform .1s ease-out);
+          @include alignCenter();
+        }
+
+        a{
+          position: absolute;
+          top: 0; left: 0;
+        }
+      }
+      
+      // Title
+      h4{
+        font-weight: normal;
+        margin: 0 auto .1em;
+        @include transition(background-color .08s ease-out);
+
+        //
+        a{
+          color: #111;
+          text-decoration: none;
+        }
+      }
+
+      // Date
+      span.date{
+        &:before{
+          display: none;
+        }
+      }
+    }
+  }
+
+
+  ///////////////////////////////////////
+  // MEDIA QUERIES
+  ///////////////////////////////////////
+  @media screen and (min-width: $bp_desktop){
+    display: block;
+
+    &:before{
+      display: none;
+    }
+
+    .column{
+      position: relative;
+      float: left;
+      width: 33.3333333333%;
+      min-height: 1px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+
+    ///////////////
+    /// LIST
+    ol{
+      position: relative;
+      list-style: none;
+      margin: 0; padding: 0; border: 0;
+      ///////////////
+      /// LIST ITEM
+      li{
+        height: 18em;
+      
+        // Title
+        h4{
+          margin-bottom: .2em;
+        }
+
+        // Date
+        span.date{
+          position: absolute;
+          bottom: .5em;
+        }
+      }
+
+      li:not(:first-child){
+        height: 100px;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+/////////////////////////////////////////////////////////////////////
+////////////////////////   VIDEO SLIDER   ///////////////////////////
+/////////////////////////////////////////////////////////////////////
+section#videoLatest_module{
+  padding-top: 3em; padding-bottom: 3em;
+  background: $id_color2;
+  color: #FFF;
+  text-align: center;
+
+  ////////////////////////
+  // CIRCLE ICON
+  .circle_icon{
+    display: none;
+  }
+
+  ////////////////////////
+  // CATEGORY TITLE
+  h3.cat_name{
+    margin-bottom: 1.5em;
+  }
+
+  ////////////////////////
+  // VIDEOS LIST
+  ol{
+    @extend .dark_list;
+    
+    // ITEM
+    li{
+      border: none;
+      padding: 0;
+      display: none;
+      
+      // First Child Layout
+      &:first-child{
+        display: block;
+      }
+
+      // Thumbnail
+      .photo_holder{
+        position: relative;
+        max-width: 620px;
+        margin: 0 auto 1.5em;
+        left: -15px;
+        width: calc(100% + 30px);
+        overflow: hidden;
+
+        // Overay & Responsive Proportions
+        &:before{
+          content: '';
+          display: block;
+          position: relative;
+          z-index: 1;
+          width: 100%;
+          padding-bottom: 66.666%;
+        }
+
+        // Player Icon
+        &:after{
+          content: '';
+          display: block;
+          position: absolute;
+          z-index: 1;
+          @include alignCenter();
+          width: 62px;
+          height: 62px;
+          background: url($images-path+'icon_videoPlayer.png') no-repeat center;
+          background-size: contain;
+        }
+
+        // Image
+        img{
+          width: 100%;
+          height: auto;
+          @include transition(transform .12s ease-out); 
+          @include alignCenter();
+        }
+
+        // Link
+        a{
+          display: block;
+          position: absolute;
+          top: 0; left: 0;
+          width: 100%;
+
+          // Overay & Responsive Proportions
+          &:before{
+            content: '';
+            display: block;
+            position: absolute;
+            z-index: 1;
+            width: 100%;
+            padding-bottom: 66.666%;
+            background: rgba(#000, .5)
+          }
+
+          // Hover
+          &:hover{
+            img{
+              //@include transform(scale(1.015) translate(-50%, -50%));
+            }
+          }
+        }
+      }
+
+      // Content
+      .info_holder{
+        position: relative;
+        z-index: 3;
+      }
+    }
+  }
+
+
+
+
+  ///////////////////////////////////////
+  // MEDIA QUERIES
+  ///////////////////////////////////////
+  @media screen and (min-width: 720px){
+    @include clearfix();
+
+    ////////////////////////
+    // VIDEOS LIST
+    ol{
+      @include clearfix();
+      padding-left: 15px; padding-right: 15px;
+      margin-bottom: 1em;
+      
+      // ITEM
+      li{
+        display: block;
+        width: 30%;
+        float: right;
+        margin-bottom: 5.5%;
+        
+        // First Child Layout
+        &:first-child{
+          width: calc(70% - 15px);
+          float: left;
+          margin-right: 15px;
+          margin-bottom: 0;
+          text-align: left;
+          
+          h4{
+            font-size: 1.563em;
+            padding-right: 2.5em;
+          }
+        }
+
+        &:not(:first-child){
+          // Thumbnail
+          .photo_holder{
+            // Player Icon
+            &:after{
+              width: 40px;
+              height: 40px;
+              left: 3em; top: 4.2em;
+              margin: 0;
+            }
+          }
+        }
+        
+        // Thumbnail
+        .photo_holder{
+          margin: 0;
+          width: 100%;
+          left: 0;
+          max-width: none;
+        }
+
+        // Article Info
+        .info_holder{
+          position: absolute;
+          bottom: 5%;
+          width: 100%;
+          padding: 0 5%;
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: $bp_desktop){
+    background: #e5e5e5;
+
+    ////////////////////////
+    // CIRCLE ICON
+    .circle_icon{
+      display: block;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+/////////////////////////////////////////////////////////////////////
+//////////////////////////   HEADLINERS   ///////////////////////////
+/////////////////////////////////////////////////////////////////////
+section#headliners_module,
+section#explainers_module{
+  padding: 3em 0 2em;
+  background-color: #e5e5e5;
+  text-align: center;
+
+
+  ////////////////////////
+  // ARTICLES LIST
+  ul{
+    position: relative;
+    list-style: none;
+    margin: 0 0 2em; padding: 0; border: 0;
+
+
+    ////////////////////////
+    // ITEM
+    li{
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      max-width: 300px;
+      margin: 0 auto;
+      //padding-bottom: 168%;
+      display: none;
+
+      &:first-child{
+        display: block;
+      }
+          
+      // Color Overlay
+      &:before{
+        content: '';
+        display: block;
+        position: relative;
+        width: 100%;
+        padding-bottom: 168%;
+      }
+
+
+      // CATEGORY TITLE
+      h3.cat_name{
+        position: relative;
+        z-index: 2;
+      }
+
+
+      // ARTICLE HOLDER
+      .article_holder{
+        position: absolute;
+        top: 0; left: 0;
+        padding: 1.5em 0;
+        width: 100%; height: 100%;
+        
+        // Photo
+        .photo_holder{
+          position: absolute;
+          left: -15px; top: 0;
+          width: calc(100% + 30px);
+          height: 100%;
+          
+          // Thumnail
+          img{
+            width: 100%;
+            height: auto;
+            @include transition(transform .2s ease-out);
+            //@include alignCenter();
+          }
+
+          a{
+            position: relative;
+            display: block;
+          
+            // Color Overlay
+            &:before{
+              content: '';
+              display: block;
+              position: absolute;
+              z-index: 1;
+              width: 100%;
+              height: 100%;
+              background: rgba(#000, .45);
+            }
+
+            //Hover
+            &:hover{              
+              img{
+                @include transform(scale(1.04));
+              }
+            }
+          }
+        }
+
+
+        // Info
+        .info_holder{
+          position: absolute;
+          z-index: 2;
+          bottom: 2em;
+          width: 100%;
+
+          color: #FFF;
+
+          // Title
+          h4{
+            text-transform: uppercase;
+            font-size: 1.5em;
+            font-weight: normal;
+            padding: 0 .5em;
+
+            a{
+              color: #FFF;
+
+              // Hover
+              &:hover{
+                text-decoration: none;
+              }
+            }
+          }
+          
+          // Excerpt
+          p{
+            padding: 1em;
+            //margin-left: -15px;
+            //width: calc(100% + 30px);
+
+            color: $id_color2;
+            background: rgba(#fff, .62);
+            font-weight: normal;
+            font-family: $font_titles;
+          }
+
+          // Meta
+          span.date{
+            color: #FFF;
+          }
+        }
+      }
+    }
+  }
+
+
+
+  ///////////////////////////////////////
+  // MEDIA QUERIES
+  ///////////////////////////////////////
+  @media screen and (min-width: 720px){
+    @include clearfix();
+
+    ////////////////////////
+    // VIDEOS LIST
+    ul{
+      @include clearfix();
+      
+      // ITEM
+      li{
+        display: block;
+        width: calc(33.33% - 30px);
+        float: left;
+        margin: 0 15px;
+
+        .article_holder{
+          // Photo
+          .photo_holder{
+            width: 100%;
+            left: 0;
+          }
+
+          // Info
+          .info_holder{
+            p{
+              display: none
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: $bp_desktop){
+    background: #FFF;
+  }
+
+  @media screen and (min-width: 1100px){
+
+    ////////////////////////
+    // VIDEOS LIST
+    ul{
+      
+      // ITEM
+      li{
+
+        .article_holder{
+
+          // Info
+          .info_holder{
+            p{
+              display: block
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+/////////////////////////////////////////////////////////////////////
+//////////////////////////   EXPLAINERS   ///////////////////////////
+/////////////////////////////////////////////////////////////////////
+section#explainers_module{
+  padding-top: 0;
+  padding-bottom: 2.5em;
+
+
+  ////////////////////////
+  // CIRCLE ICON
+  &:before{
+    z-index: 1;
+  }
+
+  ////////////////////////
+  // ARTICLES LIST
+  ul{
+
+    ////////////////////////
+    // ITEM
+    li{
+
+      // ARTICLE HOLDER
+      .article_holder{
+        padding: 2.5em 0;
+        
+        // Info
+        .info_holder{
+          bottom: 2.5em;
+        }
+      }
+    }
+  }
+
+
+
+  ///////////////////////////////////////
+  // MEDIA QUERIES
+  ///////////////////////////////////////
+  @media screen and (min-width: $bp_desktop){
+    @include clearfix();
+    background: $id_color2;
+    padding-top: 3em;
+  }
+}
+
+
+
+
+
+
+
+/////////////////////////////////////////////////////////////////////
+///////////////////   LOADING... MORE CONTAINER   ///////////////////
+/////////////////////////////////////////////////////////////////////
+#loadMore_module{
+  padding: 2em 0;
+}
+
+
+
+
+/////////////////////////////////////////////////////////////////////
+////////////////////////   VIDEO FEATURED   /////////////////////////
+/////////////////////////////////////////////////////////////////////
+section#videoFeatured_module{
+  display: none;
+  padding: 3em 0 2em;
+  background-color: $id_color2;
+  text-align: center;
+
+
+  ////////////////////////
+  // IMAGE
+  .photo_holder{
+    display: none;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+
+    // RESPONSIVE PROPORTIONS
+    &:before{
+      content: '';
+      display: block;
+      position: relative;
+      width: 100%; //height: 100%;
+      padding-bottom: $layout_desktop_header_ratio;
+      background-color: transparent;
+    }
+
+
+
+    ////////////////////////
+    // VIDEO TYPE
+    &.video_type{
+      a{
+        // Player Icon
+        &:after{
+          content: '';
+          display: none;
+          position: absolute;
+          left: 0;
+          z-index: 1;
+          @include alignCenter();
+          width: 62px;
+          height: 62px;
+          background: url($images-path+'icon_videoPlayer.png') no-repeat center;
+          background-size: contain;
+        }
+      }
+    }
+
+
+    // ARTICLE COVER
+    img{
+      width: 100%;
+      height: auto;
+    }
+
+    a{
+      position: absolute;
+      top: 0; left: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+
+      &:after{
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        width: 100%; height: 100%;
+        //@include linear-gradient(rgba(#000, .7) 0%, rgba(#000, .3) 50%, rgba(#000, 0) 95%);
+        background-color: rgba(#000, .4);
+        @include transition(background-color .2s ease-out);
+      }
+    }
+  }
+
+
+
+  ////////////////////////
+  // VIDEO
+  .video_holder{
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+    margin: 0 auto 1em;
+
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+
+    video {
+      width: 100%    !important;
+      height: auto   !important;
+    }
+
+
+
+    ////////////////////////
+    // VIDEO TYPE
+    &.video_type{
+      a{
+        // Player Icon
+        &:after{
+          content: '';
+          display: none;
+          position: absolute;
+          left: 0;
+          z-index: 1;
+          @include alignCenter();
+          width: 62px;
+          height: 62px;
+          background: url($images-path+'icon_videoPlayer.png') no-repeat center;
+          background-size: contain;
+        }
+      }
+    }
+
+
+    // ARTICLE COVER
+    img{
+      width: 100%;
+      height: auto;
+    }
+
+    a{
+      position: absolute;
+      top: 0; left: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+
+      &:after{
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        width: 100%; height: 100%;
+        //@include linear-gradient(rgba(#000, .7) 0%, rgba(#000, .3) 50%, rgba(#000, 0) 95%);
+        background-color: rgba(#000, .4);
+        @include transition(background-color .2s ease-out);
+      }
+    }
+  }
+
+
+  ////////////////////////
+  // INFO HOLDER
+  .info_holder{
+    //@extend .container;
+    text-align: center;
+    //padding-bottom: 2em; padding-top: 2em;
+    width: 100%;
+    margin-bottom: 1em;
+
+    h4{
+      font-size: 1.45em;
+      letter-spacing: .02em;
+    }
+
+    a{
+      color: #fff;
+    }
+  }
+
+
+
+  ////////////////////////
+  // TITLES
+  h3.cat_name{
+    margin-bottom: 1em;
+  }
+
+
+
+  ///////////////////////////////////////
+  // MEDIA QUERIES
+  ///////////////////////////////////////
+  @media screen and (min-width: 720px){
+    display: block;
+  }
+
+  @media screen and (min-width: $bp_desktop){
+    // Content Padding
+    .content_holder{
+      padding: 1.5em 15px 0;
+    }
+  }
+
+  @media screen and (min-width: 1100px){
+  }
+}
+
+
+
+
+
+

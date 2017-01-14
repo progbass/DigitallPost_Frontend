@@ -1,0 +1,189 @@
+
+html{
+  position: relative;
+  font-size: 16px;
+}
+
+body{
+  font-family: $font_main;
+  font-weight: normal;
+  font-size: 1em;
+  line-height: 1.5;
+  color: #111;
+}
+
+
+///////////////////////////
+/// HEADERS
+h1, h2, h3, h4, h5{
+  font-family: $font_titles;
+  font-weight: 700;
+}
+h1{
+  line-height: 1.25;
+}
+h2{
+  line-height: 1.3;
+}
+h3{
+  line-height: 1.3;
+}
+h4{
+  line-height: 1.25;
+}
+
+
+
+///////////////////////////
+/// IMAGES
+/// Responsive Ratios
+img.horizontal{
+  width: 100% !important;
+  height: auto !important;
+}
+img.vertical{
+  width: auto !important;
+  height: 100% !important;
+}
+
+
+///////////////////////////
+/// SECTIONS
+section{
+  @extend .container;
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2em 0;
+
+
+  ///////////////////////////
+  // CIRCLE ICON
+  .circle_icon{
+    position: absolute;
+    margin: 0 auto;
+    top: 0;
+    width: 100%; 
+    max-width: $bp_desktop_max;
+    display: block;
+
+    &:before{
+      content: '';
+      display: block;
+      position: absolute;
+      z-index: 2;
+      top: -16px; left: 50%;
+      @include transform(translateX(-50%));
+      background-color: rgba($id_color, .8);
+      width: 32px; height: 32px;
+      border-radius: 12em;
+    }
+  }
+
+
+
+  ///////////////////////////////////////
+  // MEDIA QUERIES
+  ///////////////////////////////////////
+  @media screen and (min-width: $bp_desktop){
+    padding-left: 0; padding-right: 0;
+  }
+
+  @media screen and (min-width: $bp_desktop_full){
+    // Icon
+    .circle_icon{
+      left: $layout_desktop_left_col; top: 0;
+      width: $layout_desktop_right_col; 
+    } 
+  }
+  
+}
+
+
+
+
+
+///////////////////////////
+/// ELEMENTS
+h3.cat_name{
+  display: inline-block;
+  margin: 0 auto;
+  padding: .3em .5em;
+
+  color: #FFF;
+  background: rgba($id_color, .87);
+  text-transform: uppercase;
+  font-size: 1.125em;
+  font-family: $font_main;
+  font-weight: 700;
+  letter-spacing: .03em;
+}
+span.cat_name{
+  color: $id_color;
+  font-size: 0.875em;
+
+  // LINK
+  a{
+    color: $id_color;
+    @include transition(color .08s ease-out);
+
+    &:hover{
+      text-decoration: none;
+      color: lighten($id_color, 50%);
+    }
+  }
+}
+
+span.date{
+  color: #7d7d7d;
+  font-size: 0.875em;
+  //
+  &:before{
+    content: '| ';
+  }
+}
+a.see_more{
+  &:hover{
+    text-decoration: none;
+  }
+}
+
+a.see_more,
+.loading_holder{
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase; 
+  color: $id_color;
+  font-size: 1.25em;
+  font-weight: 900;
+  font-family: $font_titles;
+  padding-bottom: 0em;
+
+  &:after{
+    content: '';
+    position: absolute;
+    bottom: 2px;
+    display: block;
+    background: $id_color;
+    height: 2px;
+    width: 100%;
+  }
+}
+
+.loading_holder{
+  display: block;
+  padding-bottom: 0;
+  font-size: 1.777em;
+
+  &:after{
+    display: none;
+  }
+}
+
+.photo_holder{
+  a{
+    width: 100%;
+    height: 100%;
+  } 
+}

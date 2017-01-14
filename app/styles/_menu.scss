@@ -23,8 +23,8 @@
   z-index: 5;
   top: 0; left: 0;
   width: 100%;
-  height: $menu_mobile_height;
-  @include transition(all .2s ease-out);
+  background: rgba(#fff, 0);
+  @include transition(all .2s ease-out, background .4s ease);
   //@include animation(menu_outro .6s ease-out);
   //@include animation-delay(2s);
 
@@ -34,9 +34,15 @@
   ////////////////////////////////////////////////
   &.fixed{
     position: fixed;
-    height: $menu_fixed_height;
     background: rgba(#fff, .96);
     // @include animation(menu_intro .25s ease-out);
+ 
+
+    ////////////////////////
+    // MENU HOLDER
+    .menu_holder{
+      height: $menu_fixed_height;
+    }
 
 
     ////////////////////////
@@ -68,7 +74,7 @@
     nav{
       // MENU HOLDER
       ul{
-        padding-top: .6em;
+        padding-top: .4em;
         
         // ITEM
         li{
@@ -116,6 +122,114 @@
   // CONTENT WRAPPER
   .wrapper_container{
     height: 100%;
+  }
+
+
+
+  ////////////////////////
+  // NEWSLETTER
+  #newsletter_head{
+    display: none;
+    position: relative;
+    @include clearfix();
+    padding: 0 15px;
+    height: $menu_newsletter_height;
+    background: $id_color2;
+    text-align: right;
+    color: #fff;
+
+    a{
+      color: #fff;
+    }
+
+
+    ////////////////////////
+    // SUBSCRIBE BUTTON
+    a.newsletter{
+      display: inline-block;
+      margin-right: .5em;
+      padding-left: 2.15em;
+      text-transform: uppercase;
+      font-size: 0.833em;
+      font-family: $font_titles;
+      background: url($images-path+'icon_mail.png') no-repeat left center;
+      background-size: 10%;
+      
+      // span
+      span{
+        font-weight: 500;
+        font-style: italic;
+        color: $id_color;
+      }
+
+      // Hover
+      &:hover{
+        text-decoration: none;
+      }
+    }
+    
+
+    ////////////////////////
+    // SEARCH WINDOW OPEN
+    a.searchWindowOpen_btn{
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      margin: 3px .5em 0 0;
+      width: $menu_newsletter_height - 9px;
+
+      background: url($images-path+'search_icon.svg') center no-repeat;
+      background-size: contain;
+      @include text-hide();
+    }
+
+
+    ////////////////////////
+    // SOCIAL NETWORK LIST
+    ul.social{
+      position: relative;
+      display: inline-block;
+      margin: 0; padding: 0; border: none;
+
+      //
+      li{
+        position: relative;
+        display: inline-block;
+        width: 22px;
+        @include transition(background .1s ease-out);
+
+
+        // Button
+        a{
+          display: block;
+          text-align: center;
+          width: 100%; height: 100%;
+          //@include alignCenter(true, true);
+          @include transition(color .18s ease);
+
+          // hover
+          &:hover{
+            color: $id_color;
+            text-decoration: none;
+          }
+
+          // Hide Text
+          span{
+            @extend .sr-only;
+          }
+        }
+      }
+    }
+  }
+
+
+  
+
+  ////////////////////////
+  // MENU HOLDER
+  .menu_holder{
+    position: relative;
+    height: $menu_mobile_height;
   }
 
 
@@ -200,28 +314,6 @@
 
 
 
-  ////////////////////////
-  // SEARCH FORM
-  #search_frm{
-    @include alignCenter(false, true);
-    right: 10px;
-
-    label{
-      @include text-hide();
-      width: 26px;
-      height: 26px;
-      margin: 0; padding: 0;
-
-      background: url($images-path+'search_icon.svg') center no-repeat;
-      background-size: contain;
-    }
-
-    input[type=text]{
-      display: none;
-    }
-  }
-
-
 
 
   ///////////////////////////////////////
@@ -251,6 +343,13 @@
 
 
     ////////////////////////
+    // NEWSLETTER
+    #newsletter_head{
+      display: block;
+    }
+
+
+    ////////////////////////
     // MENU ICON
     .menu_icon{
       display: none;
@@ -260,6 +359,7 @@
     ////////////////////////
     // LOGO
     .logo{
+      margin-left: 30px;
     }
 
     ////////////////////////
@@ -269,7 +369,7 @@
       height: 100%;
       @include clearfix();
       position: absolute;
-      right: 3em; top: 0;
+      right: 30px; top: 0;
       
       // MENU
       ul{
@@ -282,6 +382,11 @@
           display: inline;
           float: left;
           margin: 0 .2em;
+
+          // Last Child
+          &:last-child{
+            margin: 0;
+          }
 
           // Hover
           &:hover{
@@ -302,7 +407,8 @@
             text-transform: uppercase;
             font-family: $font_titles;
             font-size: .95em;
-            font-weight: bold;
+            font-weight: 500;
+            letter-spacing: .024em;
             padding: .35em .35em;
 
             // Hover State
@@ -352,11 +458,22 @@
   }
 
   @media screen and (min-width: $bp_desktop_full){
-    height: $menu_desktop_height;
     z-index: 4;
 
     .wrapper_container{
       padding-left: $layout_desktop_left_col;
+    }
+
+
+    .menu_holder{
+      height: $menu_desktop_height;
+    }
+
+
+    ////////////////////////
+    // LOGO
+    .logo{
+      margin-left: 15px;
     }
 
 
@@ -381,11 +498,11 @@
     ////////////////////////
     // MENU LIST
     nav{
-      right: 4em; 
+      right: 15px; 
 
       ul{
         padding-top: 1em;
-        margin: 0 1em 0 0; 
+        margin: 0 0 0; 
 
         // ITEM
         li{      

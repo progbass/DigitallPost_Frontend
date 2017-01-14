@@ -5,7 +5,7 @@
 /////////////////////////////////////////////////////////////////////
 #news_module{
   position: relative;
-  background: $id_color2;
+  background: #191919; //$id_color2;
   color: #FFF;
   text-align: center;
 
@@ -24,7 +24,7 @@
       width: 100%;
       padding-bottom: 15%;
 
-      @include linear-gradient(rgba($id_color2, 1) 70%, rgba($id_color2, 0) 1%);
+      @include linear-gradient(rgba(#191919, 1) 70%, rgba(#191919, 0) 1%);
     }
 
     &:after{
@@ -36,7 +36,7 @@
       width: 100%;
       padding-bottom: 15%;
 
-      @include linear-gradient(rgba($id_color2, 0) 0%, rgba($id_color2, 1) 70%);
+      @include linear-gradient(rgba(#191919, 0) 0%, rgba(#191919, 1) 70%);
     }
   }
 
@@ -53,7 +53,7 @@
     position: relative;
     margin: 2em auto 0;
     padding: 0 0;
-    overflow: scroll;
+    overflow-y: scroll;
 
     // LIST
     ol{
@@ -97,7 +97,7 @@
         top: 0;
         //height: 400px;
         //top: -400px;
-        background: $id_color2;
+        background: #191919; //$id_color2;
       }
     }
 
@@ -135,12 +135,14 @@
   }
 
   @media screen and (min-width: $bp_desktop){
+    margin: calc(#{-$layout_desktop_header_ratio} - #{$menu_newsletter_height}) auto 0;
+
     .position{
       padding-right: $layout_desktop_right_col;
 
       // Proportional Scale
       &:before{
-        padding-bottom: ( ($layout_desktop_header_ratio) / $layout_desktop_left_col ) * 100%;
+        padding-bottom: calc(#{(($layout_desktop_header_ratio / $layout_desktop_left_col ) * 100%)} + #{$menu_newsletter_height});
       }
 
       .wrapper{

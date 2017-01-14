@@ -35,8 +35,9 @@ header{
         // Player Icon
         &:after{
           content: '';
-          display: block;
+          display: none;
           position: absolute;
+          left: 0;
           z-index: 1;
           @include alignCenter();
           width: 62px;
@@ -61,15 +62,22 @@ header{
       width: 100%;
       height: 100%;
 
-      &:after{
+      &:before{
         content: '';
         display: block;
         position: absolute;
         top: 0;
+        z-index: 1;
         width: 100%; height: 100%;
-        //@include linear-gradient(rgba(#000, .7) 0%, rgba(#000, .3) 50%, rgba(#000, 0) 95%);
-        background-color: rgba(#000, .4);
-        @include transition(background-color .2s ease-out);
+        @include linear-gradient(rgba(#000, .28) 0%, rgba(#000, .6) 80%, rgba(#000, .9) 100%);
+        //background-color: rgba(#000, .5);
+        @include transition(all .16s ease-out);
+      }
+
+      &:hover{
+        &:before{
+            @include linear-gradient(rgba(#000, .35) 0%, rgba(#000, .6) 80%, rgba(#000, .9) 100%);
+        }
       }
     }
   }
@@ -79,6 +87,7 @@ header{
   // INFO HOLDER
   .article_info{
     @extend .container;
+    z-index: 2;
     text-align: center;
     padding-bottom: 2em; padding-top: 2em;
     width: 100%;
@@ -94,7 +103,7 @@ header{
 
   h2{
     text-transform: uppercase;
-    font-size: 1.999em;
+    font-size: 1.55em;
     margin: .25em auto;
 
     //LINK
@@ -149,14 +158,7 @@ header{
         // COVER
         .photo_holder{
           // Link
-          a{
-            &:hover{
-              // Color Overlay
-              &:before{
-                background-color: rgba(0,0,0,.6);
-              }
-            }
-          }
+          a{ }
         }
       }
     }
@@ -237,6 +239,7 @@ header{
     }
 
     h2{
+      font-size: 1.75em;
       a{ color: #fff; }
     }
 
@@ -263,6 +266,20 @@ header{
 
   @media screen and (min-width: $bp_desktop){
 
+    ////////////////////////
+    // INFO HOLDER
+    .article_info{
+      position: absolute;
+      bottom: 2em;
+      padding: 0 10em;
+      color: #fff;
+    }
+
+    // TITLES
+    h2{
+      font-size: 1.999em;
+    }
+
     // Content Wrapper
     .wrapper{
       height: 100%;
@@ -270,7 +287,7 @@ header{
 
       // Proportional Scale
       &:before{
-        padding-bottom: ( ($layout_desktop_header_ratio) / $layout_desktop_right_col ) * 100%;
+        padding-bottom: calc(#{(($layout_desktop_header_ratio / $layout_desktop_right_col ) * 100%)} + #{$menu_newsletter_height});
       }
 
       .position{
@@ -288,6 +305,18 @@ header{
 
   @media screen and (min-width: $bp_desktop_full){
     height: 100vh;
+    padding-top: $menu_newsletter_height;
+
+    ////////////////////////
+    // INFO HOLDER
+    .article_info{
+      padding: 0 14em;
+    }
+
+    // TITLES
+    h2{
+      font-size: 2.369em;
+    }
 
     .position{
       //position: relative;
@@ -296,7 +325,8 @@ header{
 
     // Content Wrapper
     .wrapper{
-      height: 100%;
+      //height: 100%;
+      //height: calc(100% - #{$menu_newsletter_height});
 
       // Proportional Scale
       &:before{
@@ -305,14 +335,39 @@ header{
     }
 
     ////////////////////////
+    /// ARTICLE THUMBNAIL
+    ////////////////////////
+    .photo_holder{
+      ////////////////////////
+      // VIDEO TYPE
+      &.video_type{
+
+        a{
+          // Player Icon
+          &:after{
+            display: block;
+            top: 2.5em; left: 2.5em;
+            width: 40px; height: 40px;
+          }
+        }
+      }
+    }
+
+
+    ////////////////////////
     // SECTION TEMPLATE
     ////////////////////////
     &.section_template{
       .main_holder{
       }
      .latest_holder{
+        .article_info{
+          text-align: left;
+        }
+
         h2{
           font-size: 1.333em;
+          padding: 0 .5em;
         }
       }
     }
