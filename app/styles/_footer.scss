@@ -1,0 +1,258 @@
+
+/////////////////////////////////////////////////////////////////////
+///////////////////////////   FOOTER  ///////////////////////////////
+/////////////////////////////////////////////////////////////////////
+footer{
+  position: relative;
+  //@include clearfix();
+  width: 100%;
+  padding: .5em 15px;
+  background: $id_color2;
+  color: #fff;
+  text-align: center;
+
+  .wrapper_container{
+    height: 100%;
+    padding: 0 !important;
+  }
+  .content_holder{
+    position: relative;
+    height: 100%;
+    @include clearfix();
+  }
+
+  // LINKS
+  a{
+    color: #fff;
+
+    &:hover,
+    &.active{
+      text-decoration: none;
+      color: $id_color;
+    }
+  }
+
+
+  ////////////////////////
+  // LOGO
+  .logo{
+    float: left;
+    position: relative;
+    display: inline-block;
+    padding: 0em 0;
+    margin: 0 0 .75em;
+    height: 40px;
+    width: 6em;
+    //position: relative;
+
+    // Link
+    a{
+      position: relative;
+      display: block;
+      height: 100%;
+      background: url($images-path+'logo_header.svg') no-repeat center;
+      background-size: contain;
+      overflow: hidden;
+      //text-indent: -9999px;
+      //font-size: 1px;
+      //@include hide-text();
+
+      &:before{
+        content: '';
+        display: block;
+        position: relative;
+        height: 100%;
+        //width: 33.5526315789%;
+      }
+    }
+  }
+
+
+  ////////////////////////
+  // MENU
+  .menu{
+    clear: both;
+    display: block;
+    list-style: none;
+    margin: 0 0 .5em; padding: 0; border: none;
+    @include clearfix();
+
+    li{
+      position: relative;
+      display: inline-block;
+      margin-right: .3em;
+      padding-right: .875em;
+      font-family: $font_titles;
+      font-style: italic;
+      font-size: .875em;
+      font-weight: 300;
+      text-transform: uppercase;
+
+      &:after{
+        content: "/";
+        position: absolute;
+        right: 0; top: 0;
+      }
+
+      &:last-child{
+        &:after{
+          display: none;
+        }
+      }
+    }
+  }
+
+
+
+  ////////////////////////
+  // SOCIAL NETWORK LIST
+  ul.social{
+    position: relative;
+    display: inline-block;
+    float: right;
+    margin: .65em 0 0; padding: 0; border: none;
+
+    //
+    li{
+      position: relative;
+      display: inline-block;
+      width: 25px;
+      @include transition(background .1s ease-out);
+
+
+      // Button
+      a{
+        display: block;
+        text-align: center;
+        width: 100%; height: 100%;
+        @include transition(color .18s ease);
+
+        // hover
+        &:hover{
+          color: $id_color;
+          text-decoration: none;
+        }
+
+        // Hide Text
+        span{
+          @extend .sr-only;
+        }
+      }
+    }
+  }
+
+
+  ////////////////////////
+  // SUBSCRIBE BUTTON
+  a.newsletter{
+    display: inline-block;
+    float: right;
+    position: relative;
+    padding-left: 2.15em;
+    margin: .7em 0 0 1.25em;
+    text-transform: uppercase;
+    font-size: 0.833em;
+    font-family: $font_titles;
+    background: url($images-path+'icon_mail.png') no-repeat left center;
+    background-size: 19%;
+    
+    // span
+    strong{
+      font-weight: 500;
+      font-style: italic;
+      color: $id_color;
+      display: block;
+    }
+    span.mob_hide{
+      display: none;
+    }
+
+    // Hover
+    &:hover{
+      color: #FFF;
+      text-decoration: none;
+    }
+  }
+  
+
+
+  
+
+
+  ///////////////////////////////////////
+  // MEDIA QUERIES
+  ///////////////////////////////////////
+  @media screen and (min-width: 41em){
+    height: $footer_desktop_height;
+
+    ////////////////////////
+    // SUBSCRIBE BUTTON
+    a.newsletter{
+      @include alignCenter(false, true);
+      position: relative;
+      margin-top: -2px;
+    }
+
+    ////////////////////////
+    // LOGO
+    .logo{
+      //margin: 0 0 0 .9em;
+      @include alignCenter(false, true);
+      position: relative;
+    }
+
+
+    ////////////////////////
+    // MENU
+    .menu{
+      display: inline-block;
+      @include alignCenter(false, true);
+      left: 7em; 
+    }
+
+    ////////////////////////
+    // SOCIAL NETWORK LIST
+    ul.social{
+      margin-top: 0;
+      @include alignCenter(false, true);
+      position: relative;
+    }
+  }
+
+  @media screen and (min-width: 45.5em){
+    ////////////////////////
+    // SUBSCRIBE BUTTON
+    a.newsletter{
+      background-size: 10%;
+
+      span.mob_hide{
+        display: inline;
+      }
+      strong{
+        display: inline;
+      }
+    }
+  }
+
+  @media screen and (min-width: $bp_desktop_full){
+    padding-left: 0; padding-right: 0;
+
+    .wrapper_container{
+      padding-left: $layout_desktop_left_col !important;
+    }
+
+    .content_holder{
+      padding: 0 15px;
+    }
+
+
+    ////////////////////////
+    // MENU
+    .menu{
+      left: 8em; 
+    }
+  }
+
+}
+
+

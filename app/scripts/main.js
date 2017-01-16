@@ -41,6 +41,37 @@
 
 	}
 
+	// WINDOW RESIZE HANDLER
+	function onResize(){
+		// Update Image Ratios
+		$('img').each(function() {
+			updateImagesRatios($(this));
+		});
+
+		// Update App Mode
+		if( $(window).innerWidth() >= bp_desktop){
+			mobile_mode = false;
+
+		} else {
+			mobile_mode = true;
+		}
+
+		// Hide Mobile Menu
+		toggleMobileMenu(false);
+
+
+
+		// Enable / Disable Scroll from news feed
+		if( $(window).innerWidth() >= 728){
+			// Enable
+			$('.customizedScroller').mCustomScrollbar('update');
+
+		} else {
+			// Disable 
+			$('.customizedScroller').mCustomScrollbar('disable');
+		}
+	}
+
 
 	// UPDATE IMAGE ASPECT RATIOS
 	function updateImagesRatios(_target){
@@ -114,22 +145,7 @@
 	$(window).scroll(onScroll);
 
 	// RESIZE
-	$(window).on('resize', function(){
-		// Update Image Ratios
-		$('img').each(function() {
-			updateImagesRatios($(this));
-		});
-
-		// Update App Mode
-		if( $(window).innerWidth >= bp_desktop){
-			mobile_mode = false;
-		} else {
-			mobile_mode = true;
-		}
-
-		// Hide Mobile Menu
-		toggleMobileMenu(false);
-	});
+	$(window).on('resize', onResize);
 
 
 
@@ -180,5 +196,18 @@
 		//$(this).css({ 'visibility': 'visible'})
 		//.fadeIn();
 	});
+
+
+	/*----------------------------------------------------
+	//	CUSTOM SCROLLBAR
+	----------------------------------------------------*/
+	$(window).on('load',function(){
+        $('#news_module .news_holder').mCustomScrollbar();
+    });
+
+
+    //
+    onResize();
+
 
 })(jQuery);

@@ -146,7 +146,9 @@
     ////////////////////////
     // SUBSCRIBE BUTTON
     a.newsletter{
+      position: relative;
       display: inline-block;
+      top: -4px;
       margin-right: .5em;
       padding-left: 2.15em;
       text-transform: uppercase;
@@ -190,6 +192,7 @@
       position: relative;
       display: inline-block;
       margin: 0; padding: 0; border: none;
+      top: -4px;
 
       //
       li{

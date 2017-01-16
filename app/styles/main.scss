@@ -33,6 +33,8 @@ $menu_desktop_height: 65px;
 $menu_fixed_height: 42px;
 $menu_newsletter_height: 32px;
 
+$footer_desktop_height: 70px;
+
 $bp_desktop: 56.25em;
 $bp_desktop_max: 120em;
 $bp_desktop_full: 70em;
@@ -103,6 +105,7 @@ $font_titles: 'Oswald', sans-serif;
 @import "search";
 @import "menu";
 @import "menu_mobile";
+@import "footer";
 @import "news";
 @import "header";
 @import "banners";
