@@ -146,11 +146,13 @@
     ////////////////////////
     // SUBSCRIBE BUTTON
     a.newsletter{
+      float: right;
+      @include alignCenter(false, true);
       position: relative;
-      display: inline-block;
-      top: -4px;
+      display: block;
       margin-right: .5em;
       padding-left: 2.15em;
+
       text-transform: uppercase;
       font-size: 0.833em;
       font-family: $font_titles;
@@ -175,6 +177,7 @@
     // SEARCH WINDOW OPEN
     a.searchWindowOpen_btn{
       cursor: pointer;
+      float: right;
       display: inline-block;
       position: relative;
       margin: 3px .5em 0 0;
@@ -189,15 +192,18 @@
     ////////////////////////
     // SOCIAL NETWORK LIST
     ul.social{
+      list-style: none;
+      float: right;
       position: relative;
-      display: inline-block;
+      display: block;
       margin: 0; padding: 0; border: none;
-      top: -4px;
+      height: 100%;
 
       //
       li{
+        @include alignCenter(false, true);
         position: relative;
-        display: inline-block;
+        float: left;
         width: 22px;
         @include transition(background .1s ease-out);
 
