@@ -78,6 +78,7 @@ section#category_module{
         overflow: hidden;
         width: 100%;
         margin-bottom: .75em;
+        max-height: 10em;
 
         // Responsive Proportions
         &:before{
@@ -89,13 +90,16 @@ section#category_module{
         }
 
         img{
+          display: block;
           width: 100%;
           height: auto;
           @include transition(transform .1s ease-out);
           @include alignCenter();
+          position: relative;
         }
 
         a{
+          display: block;
           position: absolute;
           top: 0; left: 0;
         }
@@ -153,7 +157,7 @@ section#category_module{
       ///////////////
       /// LIST ITEM
       li{
-        height: 18em;
+        height: 17.5em;
       
         // Title
         h4{
