@@ -64,11 +64,12 @@
 		// Enable / Disable Scroll from news feed
 		if( $(window).innerWidth() >= 728){
 			// Enable
-			$('.customizedScroller').mCustomScrollbar('update');
+			$('#news_module .news_holder').mCustomScrollbar('update');
 
 		} else {
+		console.log('asdasd')
 			// Disable 
-			$('.customizedScroller').mCustomScrollbar('disable');
+			$('#news_module .news_holder').mCustomScrollbar('disable');
 		}
 	}
 
@@ -202,7 +203,18 @@
 	//	CUSTOM SCROLLBAR
 	----------------------------------------------------*/
 	$(window).on('load',function(){
-        $('#news_module .news_holder').mCustomScrollbar();
+        $('#news_module .news_holder').mCustomScrollbar({
+        	//live: 'off',
+        	callbacks:{
+			    onUpdate:function(){
+			    	// disable scrollbars 
+			     	$('#news_module .news_holder').mCustomScrollbar('disable');
+			     	
+			     	// check screen resolution 
+			     	onResize();
+			    }
+			}
+        });
     });
 
 
