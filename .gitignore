@@ -1,5 +1,7 @@
 node_modules
-dist
+# dist
 .tmp
 bower_components
 test/bower_components
+digitallPost.sublime-workspace
+digitallPost.sublime-project
