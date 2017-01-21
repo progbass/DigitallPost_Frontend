@@ -346,9 +346,23 @@
 
 
   @media screen and (min-width: $bp_desktop){
+    font-size: 1.125em;
+    
     .wrapper_container{
       padding-left: $layout_desktop_left_col;
     }
+
+    ////////////////////////////////////////////////
+    // MENU MODE: FIXED
+    ////////////////////////////////////////////////
+    &.fixed{
+      ////////////////////////
+      // MENU HOLDER
+      .menu_holder{
+        height: $menu_fixed_height + 5px;
+      }
+    }
+    ////////////////////////////////////////////////
 
 
     ////////////////////////
@@ -369,7 +383,10 @@
     // LOGO
     .logo{
       margin-left: 30px;
+      height: 75%;
     }
+
+
 
     ////////////////////////
     // MENU LIST
@@ -510,7 +527,7 @@
       right: 15px; 
 
       ul{
-        padding-top: 1em;
+        //padding-top: 1em;
         margin: 0 0 0; 
 
         // ITEM

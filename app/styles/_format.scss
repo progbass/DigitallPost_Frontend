@@ -169,6 +169,10 @@ a.see_more,
     height: 2px;
     width: 100%;
   }
+
+  @media screen and (min-width: $bp_desktop){
+    font-size: 1.5em;
+  }
 }
 
 .loading_holder{

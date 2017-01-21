@@ -585,6 +585,8 @@ section.article_module{
   }
 
   @media screen and (min-width: $bp_desktop){
+    font-size: $font_size_desktop;
+
     .wrapper_container{
       max-width: 80em;
       @include clearfix;

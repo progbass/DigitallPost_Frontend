@@ -79,7 +79,11 @@ gulp.task('images', () => {
 });
 
 gulp.task('fonts', () => {
-  return gulp.src(['./bower_components/**/*.{eot,svg,ttf,woff,woff2}', 'app/fonts/**/*'])
+  return gulp.src([
+      'bower_components/font-awesome/fonts/*.{eot,svg,ttf,woff,woff2}',
+      //'bower_components/**/*.{eot,svg,ttf,woff,woff2}',
+      'app/fonts/**/*'
+    ])
     .pipe(gulp.dest('.tmp/fonts'))
     .pipe(gulp.dest('dist/fonts'));
 });

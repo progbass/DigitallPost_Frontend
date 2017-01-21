@@ -108,6 +108,7 @@ section#category_module{
       // Title
       h4{
         font-weight: normal;
+        font-size: 1.125em;
         margin: 0 auto .1em;
         @include transition(background-color .08s ease-out);
 
@@ -133,6 +134,9 @@ section#category_module{
   ///////////////////////////////////////
   @media screen and (min-width: $bp_desktop){
     display: block;
+    font-size: $font_size_desktop;
+    padding-top: 2em; padding-bottom: 2em;
+
 
     &:before{
       display: none;
@@ -172,7 +176,7 @@ section#category_module{
       }
 
       li:not(:first-child){
-        height: 100px;
+        height: 6.75em;
       }
     }
   }
@@ -367,6 +371,7 @@ section#videoLatest_module{
 
   @media screen and (min-width: $bp_desktop){
     background: #e5e5e5;
+    font-size: $font_size_desktop;
 
     ////////////////////////
     // CIRCLE ICON
@@ -548,6 +553,12 @@ section#explainers_module{
         float: left;
         margin: 0 15px;
 
+
+        // CATEGORY TITLE
+        h3.cat_name{
+          font-size: $font_size_desktop;
+        }
+
         .article_holder{
           // Photo
           .photo_holder{
@@ -584,7 +595,8 @@ section#explainers_module{
           // Info
           .info_holder{
             p{
-              display: block
+              display: block;
+              font-size: $font_size_desktop;
             }
           }
         }
@@ -658,6 +670,21 @@ section#explainers_module{
 /////////////////////////////////////////////////////////////////////
 #loadMore_module{
   padding: 2em 0;
+
+  ////////////////////////
+  // CIRCLE ICON
+  .circle_icon{
+    display: none;
+  }
+
+  @media screen and (min-width: $bp_desktop){
+
+    ////////////////////////
+    // CIRCLE ICON
+    .circle_icon{
+      display: block;
+    }
+  }
 }
 
 
@@ -854,6 +881,8 @@ section#videoFeatured_module{
   }
 
   @media screen and (min-width: $bp_desktop){
+    font-size: $font_size_desktop;
+
     // Content Padding
     .content_holder{
       padding: 1.5em 15px 0;
