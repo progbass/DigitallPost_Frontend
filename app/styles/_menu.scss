@@ -500,6 +500,9 @@
     // LOGO
     .logo{
       margin-left: 15px;
+      margin-top: 10px;
+      width: 9em;
+      height: 100%
     }
 
 
@@ -509,6 +512,14 @@
     &.fixed{
       .wrapper_container{
         padding-left: $layout_desktop_left_col;
+      }
+
+      // LOGO
+      .logo{
+        margin-left: 15px;
+        margin-top: 0;
+        width: 5em;
+        height: 75%;
       }
     }
     ////////////////////////////////////////////////

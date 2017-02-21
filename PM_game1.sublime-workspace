@@ -4,6 +4,46 @@
 		"selected_items":
 		[
 			[
+				"proto",
+				"prototype"
+			],
+			[
+				"coin",
+				"coinsGroup"
+			],
+			[
+				"instruc",
+				"instructions_4"
+			],
+			[
+				"ima",
+				"image"
+			],
+			[
+				"coins",
+				"coins_max"
+			],
+			[
+				"score",
+				"score_display"
+			],
+			[
+				"re",
+				"relative"
+			],
+			[
+				"lo",
+				"load"
+			],
+			[
+				"coni",
+				"coins_max"
+			],
+			[
+				"bro",
+				"browserSync"
+			],
+			[
 				"max",
 				"max-height: "
 			],
@@ -152,10 +192,6 @@
 				"inline-block"
 			],
 			[
-				"re",
-				"rectPos"
-			],
-			[
 				"inner",
 				"innerWidth"
 			],
@@ -232,81 +268,83 @@
 	"buffers":
 	[
 		{
-			"file": "app/index.html",
+			"file": "/Users/progbass/Sites/PhilipMorris/BensonHedges/desarrollo/game/main.js",
 			"settings":
 			{
-				"buffer_size": 39083,
+				"buffer_size": 1010,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "bower_components/font-awesome/scss/_variables.scss",
+			"file": "/Users/progbass/Sites/PhilipMorris/BensonHedges/desarrollo/game/states/boot.js",
 			"settings":
 			{
-				"buffer_size": 22644,
+				"buffer_size": 8541,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "gulpfile.js",
+			"file": "/Users/progbass/Sites/PhilipMorris/BensonHedges/desarrollo/game/states/play.js",
 			"settings":
 			{
-				"buffer_size": 4386,
+				"buffer_size": 10239,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/styles/_banners.scss",
+			"file": "/Users/progbass/Sites/PhilipMorris/BensonHedges/desarrollo/game/objects/coin.js",
 			"settings":
 			{
-				"buffer_size": 949,
-				"line_ending": "Unix"
+				"buffer_size": 3131,
+				"encoding": "UTF-8",
+				"line_ending": "Unix",
+				"name": "var Line = function (game) {Phaser.Group.call(this"
 			}
 		},
 		{
-			"file": "app/single.html",
+			"file": "/Users/progbass/Sites/PhilipMorris/BensonHedges/desarrollo/css/styles.css",
 			"settings":
 			{
-				"buffer_size": 28989,
+				"buffer_size": 972,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/scripts/main.js",
+			"file": "/Users/progbass/Sites/PhilipMorris/BensonHedges/desarrollo/game/states/gameover.js",
 			"settings":
 			{
-				"buffer_size": 5114,
+				"buffer_size": 802,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/styles/_home.scss",
+			"file": "/Users/progbass/Sites/PhilipMorris/BensonHedges/desarrollo/game/states/preload.js",
 			"settings":
 			{
-				"buffer_size": 16918,
+				"buffer_size": 962875,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/styles/_article.scss",
+			"file": "/Users/progbass/Sites/PhilipMorris/BensonHedges/desarrollo/game/states/instructions.js",
 			"settings":
 			{
-				"buffer_size": 12537,
+				"buffer_size": 7387,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/styles/_menu.scss",
+			"file": "/Users/progbass/Sites/PhilipMorris/BensonHedges/desarrollo/index.html",
 			"settings":
 			{
-				"buffer_size": 10269,
+				"buffer_size": 835,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -361,11 +399,28 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/progbass/Sites/DigitallPost/front-end",
-		"/Users/progbass/Sites/DigitallPost/front-end/app"
+		"/Users/progbass/Sites/PhilipMorris/BensonHedges/desarrollo",
+		"/Users/progbass/Sites/PhilipMorris/BensonHedges/desarrollo/css",
+		"/Users/progbass/Sites/PhilipMorris/BensonHedges/desarrollo/game",
+		"/Users/progbass/Sites/PhilipMorris/BensonHedges/desarrollo/game/states"
 	],
 	"file_history":
 	[
+		"/Users/progbass/Sites/PhilipMorris/BensonHedges/desarrollo/game/states/intro.js",
+		"/Users/progbass/Sites/PhilipMorris/BensonHedges/desarrollo/game/states/gameover.js",
+		"/Users/progbass/Sites/PhilipMorris/BensonHedges/desarrollo/Gruntfile.js",
+		"/Users/progbass/Sites/PhilipMorris/BensonHedges/desarrollo/index.html",
+		"/Users/progbass/Sites/PhilipMorris/BensonHedges/desarrollo/css/styles.css",
+		"/Users/progbass/Sites/PhilipMorris/BensonHedges/desarrollo/bower.json",
+		"/Users/progbass/Sites/PhilipMorris/BensonHedges/desarrollo/game/states/play_p2.js",
+		"/Users/progbass/Sites/PhilipMorris/BensonHedges/desarrollo/game/states/preload.js",
+		"/Users/progbass/Sites/PhilipMorris/BensonHedges/desarrollo/game/states/instructions.js",
+		"/Users/progbass/Sites/PhilipMorris/BensonHedges/desarrollo/game/states/boot.js",
+		"/Users/progbass/Sites/PhilipMorris/BensonHedges/desarrollo/game/objects/guy.js",
+		"/Users/progbass/Sites/PhilipMorris/BensonHedges/desarrollo/game/states/play.js",
+		"/Users/progbass/Sites/PhilipMorris/BensonHedges/desarrollo/package.json",
+		"/Users/progbass/Downloads/valentinelizalde.wordpress.2017-01-31.xml",
+		"/Users/progbass/Sites/PhilipMorris/clicklok_v1_0 (1)/clicklok/scripts/howler.core.js",
 		"/Users/progbass/Sites/DigitallPost/front-end/app/section.html",
 		"/Users/progbass/Sites/DigitallPost/front-end/app/styles/_format.scss",
 		"/Users/progbass/Sites/DigitallPost/front-end/app/styles/main.scss",
@@ -478,15 +533,7 @@
 		"/Users/progbass/Sites/ColdwellBanker/desarrollo/application/models/Login_model.php",
 		"/Users/progbass/Sites/ColdwellBanker/desarrollo/application/controllers/Home.php",
 		"/Users/progbass/Sites/ColdwellBanker/desarrollo/application/views/templates/header.php",
-		"/Users/progbass/Sites/ColdwellBanker/desarrollo/application/controllers/Login.php",
-		"/Users/progbass/Sites/ColdwellBanker/desarrollo/application/config/config.php",
-		"/Users/progbass/Sites/ColdwellBanker/desarrollo/application/config/database.php",
-		"/Users/progbass/Sites/ColdwellBanker/desarrollo/composer.json",
-		"/Users/progbass/Sites/ColdwellBanker/desarrollo/.gitignore",
-		"/Users/progbass/Sites/ColdwellBanker/desarrollo/gruntfile.js",
-		"/Users/progbass/Sites/ColdwellBanker/desarrollo/bower.json",
-		"/Volumes/LaCie/SITES/LaikasEscape/desarolloArduino/main.js",
-		"/Volumes/LaCie/SITES/LaikasEscape/desarolloArduino/index.html"
+		"/Users/progbass/Sites/ColdwellBanker/desarrollo/application/controllers/Login.php"
 	],
 	"find":
 	{
@@ -505,134 +552,134 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"copy",
-			".vertical",
-			"vertical",
-			"images",
-			"font-awesom",
-			"circle",
-			"loadMore_module",
-			"customizedScroller",
-			"\n\n                <li>\n                  <a href=\"#\">Deportes</a>",
-			"deportes",
-			"cate",
-			"content_holder",
-			"innerWidth",
-			"latest_module",
-			"latest",
-			"Youtube",
-			"youtube",
-			".logo",
-			"section",
-			"Aviso de Privacidad",
-			"header class=",
-			"search",
-			"align",
-			"newslet",
-			"asideARTICLE",
-			"after",
-			"banner_holder",
-			"banners_holder",
-			"BANNER",
-			"menu_intro",
-			"menu_desktop",
-			"menu_heigth",
-			"menu_holder",
-			"text-hide",
-			"make-",
-			"make-row",
-			"make-col-",
-			"col-",
-			"#",
-			"href=\"\"",
-			"\"\"",
-			"#",
-			"<a href=\"#\">",
-			"<li>\n                  <h4><a href=\"#\">",
-			"#",
-			"photo_holder",
-			"<ol>",
-			"ol",
-			"$id_color2",
-			"VIDEO SLIDER",
-			"video_module",
-			"More Articles",
-			"Title",
-			"Box",
-			"30px",
-			"circle_ic",
-			"logo",
+			"Coin",
+			"kite",
+			"timeup_timer",
+			"gameo",
+			"coinOut",
+			"_sprite",
+			"setFrame",
+			"coin",
+			"Line",
+			"coins_max",
+			"spawnCoin",
+			"rows",
+			"available",
+			"position: new Phaser.Point(10, 20), ",
+			"_y",
+			"130",
+			"_y",
+			"_x",
+			"_y",
+			"spawn",
+			" ]",
+			"[ ",
+			"[{",
+			"true",
+			"position:",
+			"star1",
+			"pt",
+			"this.game.world.centerY",
+			"this.game.world.centerX",
+			"coinsGroup",
+			".87",
+			"iconTween1",
+			"delay(500).",
+			"icon1",
+			"from",
+			"-1",
+			"false",
+			".87",
+			"reverse",
+			"620",
+			"980",
+			"scale",
+			"x: 0, y: ",
+			"Elastic",
+			"instructions_2",
+			"frame",
+			"pointsDisplay",
+			"frame",
+			"scale",
+			"coin",
+			"font_style",
+			"style",
+			"instructions_1",
+			"9000",
+			"6000",
+			"3100",
+			"87",
+			"cajetilla",
+			"Elastic",
+			"820",
+			"75",
+			"Back",
+			"frame",
+			"60",
+			"80",
+			"set(0.5);",
 			"50",
-			"33.26",
-			"33.2695984704",
-			"66.7304015296",
-			"main_",
-			"50",
-			"gradient",
-			"45.5",
-			"after",
-			"news_hold",
-			"height:",
-			"layout_desktop_left_col",
-			"980px",
-			"74.642857",
-			"74.642857%",
-			"layout_desktop_left_col",
-			"25.357143",
-			"Searching",
-			"25.357143",
-			"$lay",
-			"anima",
-			"opaci",
-			"circle",
-			"mobile_menu",
-			"dark_list",
-			"!important",
-			"vide",
-			"header ",
-			"$(this)",
-			"$this",
-			" = ",
-			".parent()",
-			"img",
-			"lighten",
-			"#0fa000",
-			"fa fa-",
-			"fa-",
-			"</i",
-			"</",
-			"<i",
-			"</i>",
-			"<i class=\"\">",
-			"logo_header",
-			"latest_list",
-			"ol{",
-			"ol",
-			"3a5794",
-			"fonts",
-			"main-bower-files",
-			"font",
-			"video",
-			"header",
-			"cover",
-			"COVER",
-			"cover",
-			"header",
-			"cate",
-			"Ronaldo\">",
-			"<img src=\"",
-			"latest",
-			"</h4>",
-			"<h4>",
-			"</h4>",
-			"<h4>",
-			"alt=\"\" />",
-			"<img src=\"",
-			"alt=\"\" />",
-			"<div class=\"photo_holder\">\n                  <img src=\"",
-			"</h4>",
-			"<h4>",
-			"</h4>"
+			"20",
+			"rnd",
+			"sprite",
+			"offset",
+			"100",
+			"10",
+			"300",
+			"1",
+			"300",
+			"consol",
+			": ",
+			"this.coins_same",
+			"this.coins_tota",
+			"this.coins_ma",
+			"this.",
+			"this.coins_ma",
+			"this.score_ma",
+			"this.score",
+			",",
+			"loop_spawner",
+			"hero_dragged",
+			"this.",
+			"hero_dragged",
+			"score_max",
+			"score",
+			"Score",
+			"score",
+			"Score",
+			"score",
+			"Score",
+			"score",
+			"coins_same_time",
+			"this.",
+			"coins_same_time",
+			"coins_total",
+			"coins_max",
+			",",
+			": ",
+			"getC",
+			"points_flag",
+			"test",
+			"arcade",
+			"this.",
+			"spawn",
+			"clickListener",
+			"console",
+			"game",
+			"consol",
+			"coinGroup",
+			"game",
+			"input_body",
+			"enable",
+			"Enable",
+			"enable",
+			"Enable",
+			"enable",
+			"ball",
+			"score_display",
+			"instructionsText",
+			"destroy",
+			"kill"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -655,19 +702,19 @@
 			[
 				{
 					"buffer": 0,
-					"file": "app/index.html",
+					"file": "/Users/progbass/Sites/PhilipMorris/BensonHedges/desarrollo/game/main.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 39083,
+						"buffer_size": 1010,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								493,
-								497
+								51,
+								51
 							]
 						],
 						"settings":
@@ -676,10 +723,6 @@
 							[
 								{
 									"characters": "<",
-									"selector": "text.html"
-								},
-								{
-									"characters": ".#",
 									"selector": "text.html"
 								},
 								{
@@ -706,274 +749,8 @@
 								{
 									"1":
 									[
-										581,
-										582
-									]
-								},
-								"icon":
-								{
-									"1":
-									[
-										"Packages/BracketHighlighter/icons/double_quote.png",
-										"brackethighlighter.default"
-									]
-								},
-								"open":
-								{
-									"1":
-									[
-										484,
-										485
-									]
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.regions":
-							[
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content"
-							],
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "bower_components/font-awesome/scss/_variables.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 22644,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								70,
-								67
-							]
-						],
-						"settings":
-						{
-							"auto_complete_triggers":
-							[
-								{
-									"characters": "<",
-									"selector": "text.html"
-								},
-								{
-									"characters": ".#",
-									"selector": "text.html"
-								},
-								{
-									"characters": ".#",
-									"selector": "text.html"
-								}
-							],
-							"bracket_highlighter.busy": false,
-							"bracket_highlighter.locations":
-							{
-								"close":
-								{
-									"1":
-									[
-										75,
-										76
-									]
-								},
-								"icon":
-								{
-									"1":
-									[
-										"Packages/BracketHighlighter/icons/double_quote.png",
-										"brackethighlighter.default"
-									]
-								},
-								"open":
-								{
-									"1":
-									[
-										66,
-										67
-									]
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.regions":
-							[
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content"
-							],
-							"syntax": "Packages/Syntax Highlighting for Sass/Syntaxes/SCSS.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "gulpfile.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4386,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2475,
-								2475
-							]
-						],
-						"settings":
-						{
-							"auto_complete_triggers":
-							[
-								{
-									"characters": "<",
-									"selector": "text.html"
-								},
-								{
-									"characters": ".#",
-									"selector": "text.html"
-								},
-								{
-									"characters": ".#",
-									"selector": "text.html"
-								}
-							],
-							"bracket_highlighter.busy": false,
-							"bracket_highlighter.locations":
-							{
-								"close":
-								{
-									"1":
-									[
-										2474,
-										2475
+										51,
+										52
 									]
 								},
 								"icon":
@@ -988,8 +765,8 @@
 								{
 									"1":
 									[
-										2463,
-										2464
+										36,
+										37
 									]
 								},
 								"unmatched":
@@ -998,46 +775,31 @@
 							},
 							"bracket_highlighter.regions":
 							[
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
 								"bh_default",
 								"bh_default_center",
 								"bh_default_open",
 								"bh_default_close",
 								"bh_default_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
 								"bh_regex",
 								"bh_regex_center",
 								"bh_regex_open",
 								"bh_regex_close",
 								"bh_regex_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
 								"bh_curly",
 								"bh_curly_center",
 								"bh_curly_open",
 								"bh_curly_close",
 								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
 								"bh_single_quote",
 								"bh_single_quote_center",
 								"bh_single_quote_open",
@@ -1048,153 +810,53 @@
 								"bh_double_quote_open",
 								"bh_double_quote_close",
 								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
 								"bh_tag",
 								"bh_tag_center",
 								"bh_tag_open",
 								"bh_tag_close",
-								"bh_tag_content"
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content"
 							],
 							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1752.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "app/styles/_banners.scss",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 949,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								949
-							]
-						],
-						"settings":
-						{
-							"auto_complete_triggers":
-							[
-								{
-									"characters": "<",
-									"selector": "text.html"
-								},
-								{
-									"characters": ".#",
-									"selector": "text.html"
-								}
-							],
-							"bracket_highlighter.busy": false,
-							"bracket_highlighter.locations":
-							{
-								"close":
-								{
-								},
-								"icon":
-								{
-								},
-								"open":
-								{
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.regions":
-							[
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content"
-							],
-							"syntax": "Packages/Syntax Highlighting for Sass/Syntaxes/SCSS.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 554.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "app/single.html",
+					"buffer": 1,
+					"file": "/Users/progbass/Sites/PhilipMorris/BensonHedges/desarrollo/game/states/boot.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 28989,
+						"buffer_size": 8541,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								27759,
-								27759
+								8426,
+								8426
 							]
 						],
 						"settings":
@@ -1203,284 +865,6 @@
 							[
 								{
 									"characters": "<",
-									"selector": "text.html"
-								},
-								{
-									"characters": ".#",
-									"selector": "text.html"
-								},
-								{
-									"characters": ".#",
-									"selector": "text.html"
-								},
-								{
-									"characters": ".#",
-									"selector": "text.html"
-								},
-								{
-									"characters": ".#",
-									"selector": "text.html"
-								},
-								{
-									"characters": ".#",
-									"selector": "text.html"
-								}
-							],
-							"bracket_highlighter.busy": false,
-							"bracket_highlighter.locations":
-							{
-								"close":
-								{
-								},
-								"icon":
-								{
-								},
-								"open":
-								{
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.regions":
-							[
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content"
-							],
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 21130.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "app/scripts/main.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5114,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								5100,
-								5076
-							]
-						],
-						"settings":
-						{
-							"auto_complete_triggers":
-							[
-								{
-									"characters": "<",
-									"selector": "text.html"
-								},
-								{
-									"characters": ".#",
-									"selector": "text.html"
-								},
-								{
-									"characters": ".#",
-									"selector": "text.html"
-								},
-								{
-									"characters": ".#",
-									"selector": "text.html"
-								},
-								{
-									"characters": ".#",
-									"selector": "text.html"
-								},
-								{
-									"characters": ".#",
-									"selector": "text.html"
-								}
-							],
-							"bracket_highlighter.busy": false,
-							"bracket_highlighter.locations":
-							{
-								"close":
-								{
-								},
-								"icon":
-								{
-								},
-								"open":
-								{
-								},
-								"unmatched":
-								{
-									"1":
-									[
-										5103,
-										5104
-									]
-								}
-							},
-							"bracket_highlighter.regions":
-							[
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content"
-							],
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 4977.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "app/styles/_home.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 16918,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								237,
-								237
-							]
-						],
-						"settings":
-						{
-							"auto_complete_triggers":
-							[
-								{
-									"characters": "<",
-									"selector": "text.html"
-								},
-								{
-									"characters": ".#",
-									"selector": "text.html"
-								},
-								{
-									"characters": ".#",
-									"selector": "text.html"
-								},
-								{
-									"characters": ".#",
 									"selector": "text.html"
 								},
 								{
@@ -1495,8 +879,8 @@
 								{
 									"1":
 									[
-										3390,
-										3391
+										8512,
+										8513
 									]
 								},
 								"icon":
@@ -1511,8 +895,8 @@
 								{
 									"1":
 									[
-										236,
-										237
+										8032,
+										8033
 									]
 								},
 								"unmatched":
@@ -1521,6 +905,163 @@
 							},
 							"bracket_highlighter.regions":
 							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content"
+							],
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/Users/progbass/Sites/PhilipMorris/BensonHedges/desarrollo/game/states/play.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10239,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								9603,
+								9603
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+									"1":
+									[
+										10209,
+										10210
+									]
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
@@ -1536,6 +1077,111 @@
 								"bh_curly_open",
 								"bh_curly_close",
 								"bh_curly_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content"
+							],
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/Users/progbass/Sites/PhilipMorris/BensonHedges/desarrollo/game/objects/coin.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3131,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2691,
+								2691
+							]
+						],
+						"settings":
+						{
+							"auto_name": "var Line = function (game) {Phaser.Group.call(this",
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										3103,
+										3104
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										2644,
+										2645
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
 								"bh_double_quote",
 								"bh_double_quote_center",
 								"bh_double_quote_open",
@@ -1546,42 +1192,405 @@
 								"bh_square_open",
 								"bh_square_close",
 								"bh_square_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
 								"bh_unmatched_close",
 								"bh_unmatched_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content"
+							],
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/Users/progbass/Sites/PhilipMorris/BensonHedges/desarrollo/css/styles.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 972,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								365,
+								384
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										384,
+										385
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/single_quote.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										364,
+										365
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
 								"bh_regex",
 								"bh_regex_center",
 								"bh_regex_open",
 								"bh_regex_close",
 								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
 								"bh_single_quote",
 								"bh_single_quote_center",
 								"bh_single_quote_open",
 								"bh_single_quote_close",
-								"bh_single_quote_content"
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content"
 							],
-							"syntax": "Packages/Syntax Highlighting for Sass/Syntaxes/SCSS.tmLanguage",
+							"syntax": "Packages/CSS3/CSS3.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/Users/progbass/Sites/PhilipMorris/BensonHedges/desarrollo/game/states/gameover.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 802,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								505,
+								505
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										515,
+										516
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/round_bracket.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										462,
+										463
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content"
+							],
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/Users/progbass/Sites/PhilipMorris/BensonHedges/desarrollo/game/states/preload.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 962875,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								213036,
+								213036
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+									"1":
+									[
+										213048,
+										213049
+									]
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content"
+							],
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 1461586.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
@@ -1590,19 +1599,19 @@
 				},
 				{
 					"buffer": 7,
-					"file": "app/styles/_article.scss",
+					"file": "/Users/progbass/Sites/PhilipMorris/BensonHedges/desarrollo/game/states/instructions.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 12537,
+						"buffer_size": 7387,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1044,
-								1096
+								7223,
+								7223
 							]
 						],
 						"settings":
@@ -1611,18 +1620,6 @@
 							[
 								{
 									"characters": "<",
-									"selector": "text.html"
-								},
-								{
-									"characters": ".#",
-									"selector": "text.html"
-								},
-								{
-									"characters": ".#",
-									"selector": "text.html"
-								},
-								{
-									"characters": ".#",
 									"selector": "text.html"
 								},
 								{
@@ -1637,8 +1634,8 @@
 								{
 									"1":
 									[
-										1172,
-										1173
+										7349,
+										7350
 									]
 								},
 								"icon":
@@ -1653,8 +1650,8 @@
 								{
 									"1":
 									[
-										1038,
-										1039
+										7164,
+										7165
 									]
 								},
 								"unmatched":
@@ -1663,41 +1660,11 @@
 							},
 							"bracket_highlighter.regions":
 							[
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
 								"bh_default",
 								"bh_default_center",
 								"bh_default_open",
 								"bh_default_close",
 								"bh_default_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
 								"bh_regex",
 								"bh_regex_center",
 								"bh_regex_open",
@@ -1708,43 +1675,73 @@
 								"bh_curly_open",
 								"bh_curly_close",
 								"bh_curly_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
 								"bh_single_quote",
 								"bh_single_quote_center",
 								"bh_single_quote_open",
 								"bh_single_quote_close",
-								"bh_single_quote_content"
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content"
 							],
-							"syntax": "Packages/Syntax Highlighting for Sass/Syntaxes/SCSS.tmLanguage",
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2557.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
 					"buffer": 8,
-					"file": "app/styles/_menu.scss",
+					"file": "/Users/progbass/Sites/PhilipMorris/BensonHedges/desarrollo/index.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 10269,
+						"buffer_size": 835,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								6623,
-								6599
+								506,
+								506
 							]
 						],
 						"settings":
@@ -1758,18 +1755,6 @@
 								{
 									"characters": ".#",
 									"selector": "text.html"
-								},
-								{
-									"characters": ".#",
-									"selector": "text.html"
-								},
-								{
-									"characters": ".#",
-									"selector": "text.html"
-								},
-								{
-									"characters": ".#",
-									"selector": "text.html"
 								}
 							],
 							"bracket_highlighter.busy": false,
@@ -1777,29 +1762,34 @@
 							{
 								"close":
 								{
+									"1":
+									[
+										484,
+										488
+									]
 								},
 								"icon":
 								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/tag.png",
+										"brackethighlighter.default"
+									]
 								},
 								"open":
 								{
+									"1":
+									[
+										484,
+										488
+									]
 								},
 								"unmatched":
 								{
-									"1":
-									[
-										6598,
-										6599
-									]
 								}
 							},
 							"bracket_highlighter.regions":
 							[
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
 								"bh_default",
 								"bh_default_center",
 								"bh_default_open",
@@ -1810,26 +1800,21 @@
 								"bh_regex_open",
 								"bh_regex_close",
 								"bh_regex_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
 								"bh_c_define",
 								"bh_c_define_center",
 								"bh_c_define_open",
 								"bh_c_define_close",
 								"bh_c_define_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
 								"bh_single_quote",
 								"bh_single_quote_center",
 								"bh_single_quote_open",
@@ -1840,26 +1825,34 @@
 								"bh_double_quote_open",
 								"bh_double_quote_close",
 								"bh_double_quote_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
 								"bh_tag",
 								"bh_tag_center",
 								"bh_tag_open",
 								"bh_tag_close",
-								"bh_tag_content"
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content"
 							],
-							"syntax": "Packages/Syntax Highlighting for Sass/Syntaxes/SCSS.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 8000.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 4,
 					"type": "text"
 				}
 			]
@@ -1905,7 +1898,7 @@
 		"height": 0.0
 	},
 	"pinned_build_system": "",
-	"project": "digitallPost.sublime-project",
+	"project": "PM_game1.sublime-project",
 	"replace":
 	{
 		"height": 62.0
