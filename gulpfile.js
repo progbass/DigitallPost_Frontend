@@ -78,10 +78,11 @@ gulp.task('images', () => {
     .pipe(gulp.dest('dist/images'));
 });
 
+
 gulp.task('fonts', () => {
-  return gulp.src([
+   gulp.src([
       'bower_components/font-awesome/fonts/*.{eot,svg,ttf,woff,woff2}',
-      //'bower_components/**/*.{eot,svg,ttf,woff,woff2}',
+      'bower_components/bootstrap-sass/assets/fonts/bootstrap/**/*.{eot,svg,ttf,woff,woff2}',
       'app/fonts/**/*'
     ])
     .pipe(gulp.dest('.tmp/fonts'))

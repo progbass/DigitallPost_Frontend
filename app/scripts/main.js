@@ -67,7 +67,6 @@
 			$('#news_module .news_holder').mCustomScrollbar('update');
 
 		} else {
-		console.log('asdasd')
 			// Disable 
 			$('#news_module .news_holder').mCustomScrollbar('disable');
 		}
