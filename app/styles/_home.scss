@@ -192,7 +192,7 @@ section#category_module{
 ////////////////////////   VIDEO SLIDER   ///////////////////////////
 /////////////////////////////////////////////////////////////////////
 section#videoLatest_module{
-  padding-top: 3em; padding-bottom: 3em;
+  padding-top: 2em; padding-bottom: 3em;
   background: $id_color2;
   color: #FFF;
   text-align: center;
@@ -223,6 +223,15 @@ section#videoLatest_module{
       // First Child Layout
       &:first-child{
         display: block;
+      }
+
+      // Information
+      .info_holder{
+        h4{
+          a{
+            color: #fff;
+          }
+        }
       }
 
       // Thumbnail
@@ -392,12 +401,19 @@ section#videoLatest_module{
 /////////////////////////////////////////////////////////////////////
 //////////////////////////   HEADLINERS   ///////////////////////////
 /////////////////////////////////////////////////////////////////////
+$bp_explainer_split: 37.5em;
+
 section#headliners_module,
 section#explainers_module{
   padding: 3em 0 2em;
   background-color: #e5e5e5;
   text-align: center;
 
+  ////////////////////////
+  // WRAPPER
+  .wrapper_container{
+    padding: 0;
+  }
 
   ////////////////////////
   // ARTICLES LIST
@@ -413,7 +429,7 @@ section#explainers_module{
       position: relative;
       overflow: hidden;
       width: 100%;
-      max-width: 300px;
+      max-width: 320px;
       margin: 0 auto;
       //padding-bottom: 168%;
       display: none;
@@ -538,8 +554,43 @@ section#explainers_module{
   ///////////////////////////////////////
   // MEDIA QUERIES
   ///////////////////////////////////////
+  @media screen and (min-width: $bp_explainer_split) and (max-width: 719px){
+    @include clearfix();
+    padding: 3em 7.5px 2em 15px;
+    width: 50%;
+    float: left;
+    clear: none;
+
+    // CIRCLE ICON
+    .circle_icon{
+      display: none;
+    }
+
+    ////////////////////////
+    // VIDEOS LIST
+    ul{
+      margin-bottom: 1.5em;
+      
+      // ITEM
+      li{
+        max-width: none;
+        
+        // INFORMATION
+        .article_holder{
+          padding: 1.5em 0 !important;
+        }
+      }
+    }
+  }
   @media screen and (min-width: 720px){
     @include clearfix();
+
+    ////////////////////////
+    // WRAPPER
+    .wrapper_container{
+      padding: 0 15px;
+    }
+
 
     ////////////////////////
     // VIDEOS LIST
@@ -641,7 +692,7 @@ section#explainers_module{
         
         // Info
         .info_holder{
-          bottom: 2.5em;
+          //bottom: 2.5em;
         }
       }
     }
@@ -652,6 +703,14 @@ section#explainers_module{
   ///////////////////////////////////////
   // MEDIA QUERIES
   ///////////////////////////////////////
+  @media screen and (min-width: $bp_explainer_split) and (max-width: 719px){
+    padding: 3em 15px 2em 7.5px;
+
+    // CIRCLE ICON
+    .circle_icon{
+      display: none;
+    }
+  }
   @media screen and (min-width: $bp_desktop){
     @include clearfix();
     background: $id_color2;

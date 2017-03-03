@@ -78,6 +78,8 @@
         
         // ITEM
         li{
+          position: relative;
+
           &:hover{
             & > a{ color: #fff; }
           }
@@ -284,11 +286,11 @@
     position: relative;
     display: inline-block;
     padding: 0em 0;
-    margin: 0 0 0 .9em;
+    margin: 0 0 0 15px;
     height: 100%;
-    width: 6em;
+    width: 6.75em;
     @include alignCenter(false, true);
-    //position: relative;
+    position: relative;
 
     // Link
     a{
@@ -329,6 +331,13 @@
   // MEDIA QUERIES
   ///////////////////////////////////////
   @media screen and (min-width: 45.5em){
+    
+  }
+
+
+  @media screen and (min-width: $bp_desktop){
+    font-size: 1.125em;
+
     .wrapper_container{
       padding: 0 0 0 30%;
     }
@@ -340,29 +349,26 @@
       .wrapper_container{
         padding-left: 0;
       }
-    }
-    ////////////////////////////////////////////////
-  }
 
-
-  @media screen and (min-width: $bp_desktop){
-    font-size: 1.125em;
-    
-    .wrapper_container{
-      padding-left: $layout_desktop_left_col;
-    }
-
-    ////////////////////////////////////////////////
-    // MENU MODE: FIXED
-    ////////////////////////////////////////////////
-    &.fixed{
       ////////////////////////
       // MENU HOLDER
       .menu_holder{
         height: $menu_fixed_height + 5px;
       }
+
+       ////////////////////////
+      // LOGO
+      .logo{
+        margin-top: 0px;
+        margin-left: 20px;
+        height: 70%;
+      }
     }
     ////////////////////////////////////////////////
+    
+    .wrapper_container{
+      padding-left: $layout_desktop_left_col;
+    }
 
 
     ////////////////////////
@@ -382,8 +388,9 @@
     ////////////////////////
     // LOGO
     .logo{
-      margin-left: 30px;
-      height: 75%;
+      margin-left: 15px;
+      margin-top: 10px;
+      //height: 75%;
     }
 
 
@@ -405,6 +412,7 @@
 
         // ITEM
         li{
+          position: relative;
           display: inline;
           float: left;
           margin: 0 .2em;
@@ -422,6 +430,7 @@
 
             ul.submenu{
               display: block;
+              right: 0
             }
           }
 
@@ -499,8 +508,7 @@
     ////////////////////////
     // LOGO
     .logo{
-      margin-left: 15px;
-      margin-top: 10px;
+      margin-top: 5px;
       width: 9em;
       height: 100%
     }

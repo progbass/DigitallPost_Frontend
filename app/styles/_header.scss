@@ -13,7 +13,7 @@ header{
     position: relative;
     //background-color: #000;
     width: 100%;
-    //min-height: 300px;
+    //max-height: 320px;
     overflow: hidden;
 
     // RESPONSIVE PROPORTIONS
@@ -22,7 +22,7 @@ header{
       display: block;
       position: relative;
       width: 100%; //height: 100%;
-      padding-bottom: $layout_desktop_header_ratio;
+      padding-bottom: 100%;//$layout_desktop_header_ratio;
       background-color: transparent;
     }
 
@@ -53,6 +53,7 @@ header{
     img{
       width: 100%;
       height: auto;
+      @include alignCenter(true, true);
     }
 
     a{
@@ -62,6 +63,7 @@ header{
       width: 100%;
       height: 100%;
 
+      // Gradient Overlay
       &:before{
         content: '';
         display: block;
@@ -69,14 +71,15 @@ header{
         top: 0;
         z-index: 1;
         width: 100%; height: 100%;
-        @include linear-gradient(rgba(#000, .28) 0%, rgba(#000, .6) 80%, rgba(#000, .9) 100%);
+        @include opacity(.3);
+        @include linear-gradient(rgba(#000, .1) 0%, rgba(#000, .05) 10%, rgba(#000, .0) 20%, rgba(#000, .4) 60%, rgba(#000, .65) 100%);
         //background-color: rgba(#000, .5);
-        @include transition(all .16s ease-out);
+        @include transition(all .1s ease-out);
       }
 
       &:hover{
         &:before{
-            @include linear-gradient(rgba(#000, .35) 0%, rgba(#000, .6) 80%, rgba(#000, .9) 100%);
+          @include linear-gradient(rgba(#000, .1) 0%, rgba(#000, .05) 10%, rgba(#000, .0) 20%, rgba(#000, .4) 60%, rgba(#000, .65) 100%);
         }
       }
     }
@@ -86,11 +89,11 @@ header{
   ////////////////////////
   // INFO HOLDER
   .article_info{
-    @extend .container;
-    z-index: 2;
-    text-align: center;
-    padding-bottom: 2em; padding-top: 2em;
-    width: 100%;
+    position: absolute;
+    bottom: 2em;
+    padding: 0 6em;
+    color: #fff;
+    z-index: 1
   }
 
 
@@ -98,19 +101,22 @@ header{
   ////////////////////////
   // TITLES
   h3.cat_name{
-   // @include transform(translateY(-50%));
-    margin-bottom: .25em
+    @include transform(translateX(-50%));
+    margin-bottom: .25em;
+    position: absolute;
+    top: -1em;
+    z-index: 2;
   }
 
   h2{
     text-transform: uppercase;
-    font-size: 1.55em;
+    font-size: 1.75em;
     margin: .25em auto;
 
     //LINK
     a{
-      color: #222;
       @include transition(all .08s ease-out);
+      color: #fff; 
 
       // HOVER
       &:hover{
@@ -122,11 +128,40 @@ header{
   }
 
 
+  ////////////////////////
+  // MAIN ARTICLE
+  .main_holder{
+    // TITLES
+    h2{
+      //LINK
+      a{
+        color: #222;
+
+        &:hover{
+          color: #fff;
+        }
+      }
+    }
+
+    // INFO HOLDER
+    .article_info{
+      position: relative;
+      @extend .container;
+      z-index: 2;
+      text-align: center;
+      padding-bottom: 1.5em; padding-top: 2em;
+      width: 100%;
+      bottom: 0
+    }
+  }
+
+
+
 
   ////////////////////////
   // LATES NEWS
   .latest_holder{
-    display: none;
+    //display: none;
 
     ////
     // LIST
@@ -140,7 +175,7 @@ header{
       li{
         position: relative;
         float: left;
-        width: 33.333%;
+        width: 100%; //33.333%;
         height: 100%;
         
 
@@ -152,14 +187,37 @@ header{
         
         // ARTICLE INFORMATION
         .article_info{
-          padding: 0 .5em;
+          padding: 0 15px;
           bottom: 1em;
+          width: 100%
         }
         
         // COVER
         .photo_holder{
           // Link
-          a{ }
+          a{
+            &:before{
+              @include opacity(1);
+            }
+          }
+
+          // Ratio
+          &:before{
+            padding-bottom: 60.666%
+          }
+
+          // Play Icon
+          &.video_type{
+            a{
+              &:after{
+                display: block;
+                top: 2.5em;
+                left: 2.5em;
+                width: 40px;
+                height: 40px;
+              }
+            }
+          }
         }
       }
     }
@@ -172,8 +230,24 @@ header{
   ///////////////////////////////////////
   // MEDIA QUERIES
   ///////////////////////////////////////
+  @media screen and (min-width: 30em){
+    ////////////////////////
+    // IMAGE
+    .photo_holder{
+      height: 100%;
+
+      // RESPONSIVE PROPORTIONS
+      &:before{
+        padding-bottom: 66.666%;
+      }
+    }
+  }
   @media screen and (min-width: 45.5em){
-    background: $id_color2;
+    
+  }
+
+  @media screen and (min-width: $bp_desktop){
+    background: #d5d6d7;
     
     // Content Wrapper
     .wrapper{
@@ -206,6 +280,24 @@ header{
       }
     }
 
+    
+    ////////////////////////
+    // INFO HOLDER
+    .article_info,
+    .main_holder .article_info{
+      position: absolute;
+      bottom: 2em;
+      padding: 0 10em;
+      color: #fff;
+    }
+
+    /////////////////
+    // PHOTO HOLDER
+    .photo_holder{
+      &:before{
+        display: none;
+      }
+    }
 
     ////////////////////////
     // IMAGE
@@ -214,23 +306,18 @@ header{
 
       // ARTICLE COVER
       img{
-        @include alignCenter(true, true);
       }
 
       a{
         &:after{
           position: relative;
         }
-      }
-    }
 
-    ////////////////////////
-    // INFO HOLDER
-    .article_info{
-      position: absolute;
-      bottom: 2em;
-      padding: 0 6em;
-      color: #fff;
+        // Gradient Overlay
+        &:before{
+          @include opacity(1)
+        }
+      }
     }
 
     ////////////////////////
@@ -238,12 +325,28 @@ header{
     span.date{
       color: #fff;
     }
-
+    h3.cat_name{
+      @include transform(translateX(0%));
+      position: relative;
+      top: auto;
+    }
     h2{
       font-size: 1.75em;
-      a{ color: #fff; }
+      a{ }
+    }
+    .main_holder h2 a{
+      color: #fff;
     }
 
+    ////////////////////////
+    // LATEST HOLDER
+    .latest_holder{
+      ul{
+        li{
+          width: 33.333%
+        }
+      }
+    }
 
     ////////////////////////
     // SECTION TEMPLATE
@@ -262,18 +365,6 @@ header{
           font-size: 1em;
         }
       }
-    }
-  }
-
-  @media screen and (min-width: $bp_desktop){
-
-    ////////////////////////
-    // INFO HOLDER
-    .article_info{
-      position: absolute;
-      bottom: 2em;
-      padding: 0 10em;
-      color: #fff;
     }
 
     // TITLES

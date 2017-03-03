@@ -33,7 +33,8 @@ $menu_desktop_height: 65px;
 $menu_fixed_height: 42px;
 $menu_newsletter_height: 32px;
 
-$footer_desktop_height: 70px;
+$footer_desktop_height: 30px;
+$footer_bp_show: 41em;
 
 $bp_desktop: 56.25em;
 $bp_desktop_max: 120em;
@@ -44,7 +45,7 @@ $layout_desktop_right_col: (100% - $layout_desktop_left_col);
 $layout_desktop_header_ratio: 50%;
 
 $id_color: #e12029;
-$id_color2: #020202;
+$id_color2: #191919;//#020202;
 $font_main: 'Roboto', sans-serif;
 $font_titles: 'Oswald', sans-serif;
 $font_size_desktop: 1.2em;
@@ -88,9 +89,14 @@ $font_size_desktop: 1.2em;
     // MEDIA QUERIES
     ////////////////////////
     @media screen and (min-width: $bp_desktop_full){
-      padding-left: $layout_desktop_left_col;
-      padding-right: 0;
+      padding-left: $layout_desktop_left_col !important;
+      padding-right: 0 !important;
     }
+  }
+
+
+  @media screen and (min-width: $footer_bp_show){
+    padding-bottom: $footer_desktop_height;
   }
 }
 

@@ -47,68 +47,13 @@ img.vertical{
 }
 
 
-///////////////////////////
-/// SECTIONS
-section{
-  @extend .container;
-  position: relative;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 0;
-
-
-  ///////////////////////////
-  // CIRCLE ICON
-  .circle_icon{
-    position: absolute;
-    margin: 0 auto;
-    top: 0;
-    width: 100%; 
-    max-width: $bp_desktop_max;
-    display: block;
-
-    &:before{
-      content: '';
-      display: block;
-      position: absolute;
-      z-index: 2;
-      top: -16px; left: 50%;
-      @include transform(translateX(-50%));
-      background-color: rgba($id_color, .8);
-      width: 32px; height: 32px;
-      border-radius: 12em;
-    }
-  }
-
-
-
-  ///////////////////////////////////////
-  // MEDIA QUERIES
-  ///////////////////////////////////////
-  @media screen and (min-width: $bp_desktop){
-    padding-left: 0; padding-right: 0;
-  }
-
-  @media screen and (min-width: $bp_desktop_full){
-    // Icon
-    .circle_icon{
-      left: $layout_desktop_left_col; top: 0;
-      width: $layout_desktop_right_col; 
-    } 
-  }
-  
-}
-
-
-
-
 
 ///////////////////////////
 /// ELEMENTS
 h3.cat_name{
   display: inline-block;
   margin: 0 auto;
-  padding: .3em .5em;
+  padding: .4em .75em .3em;
 
   color: #FFF;
   background: rgba($id_color, .87);
@@ -175,6 +120,38 @@ a.see_more,
   }
 }
 
+
+///////////////////////////
+// CIRCLE ICON
+.circle_icon{
+  position: absolute;
+  margin: 0 auto;
+  top: 0;
+  width: 100%; 
+  max-width: $bp_desktop_max;
+  display: block;
+
+  &:before{
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 2;
+    top: -16px; left: 50%;
+    @include transform(translateX(-50%));
+    background-color: rgba($id_color, .8);
+    width: 32px; height: 32px;
+    border-radius: 12em;
+  }
+
+
+  @media screen and (min-width: $bp_desktop_full){
+    left: $layout_desktop_left_col; top: 0;
+    width: $layout_desktop_right_col; 
+  }
+}
+
+
+
 .loading_holder{
   display: block;
   padding-bottom: 0;
@@ -191,3 +168,25 @@ a.see_more,
     height: 100%;
   } 
 }
+
+
+
+
+///////////////////////////
+/// SECTIONS
+section{
+  @extend .container;
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 0;
+  clear: both;
+
+  ///////////////////////////////////////
+  // MEDIA QUERIES
+  ///////////////////////////////////////
+  @media screen and (min-width: $bp_desktop){
+    padding-left: 0; padding-right: 0;
+  }  
+}
+

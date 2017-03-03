@@ -51,7 +51,7 @@
       display: block;
       position: relative;
       width: 100%;
-      padding-bottom: 66.666%;
+      padding-bottom: 100%;
     }
 
     // Inner Shadow
@@ -112,6 +112,17 @@
   ///////////////////////////////////////
   // MEDIA QUERIES
   ///////////////////////////////////////
+  ///
+  ///
+  @media screen and (min-width: 30em){
+    // Thumbnail
+    .photo_holder{
+      // Image Ratio
+      &:before{
+        padding-bottom: 66.666%;
+      }
+    }
+  }
   @media screen and (min-width: 45.5em){
     width: calc(33.333% - 30px);
     float: left;
@@ -134,17 +145,23 @@
 
 
 @mixin full_article{
-  text-align: center;
 
   // Article Title
   h4{
-    font-size: 1.333em;
+    font-size: 1.125em;
+    font-weight: bold;
+    //font-family: $font_main
   }
   
   // Thumbnail
   .photo_holder{
     width: 100%;
     margin: 0 0 1em;
+
+    // Image Ratio
+    &:before{
+      padding-bottom: 66.666%;
+    }
   }
   
 
@@ -153,6 +170,7 @@
   ///////////////////////////////////////
   @media screen and (min-width: 45.5em){
     width: calc(100% - 30px);
+    text-align: center;
 
     // Article Info
     .info_holder{
