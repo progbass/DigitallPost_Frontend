@@ -1,5 +1,6 @@
 (function($){
 	// Main Variables
+	var news_scrollbar_active = false;
 	var mobile_mode = true;
 	var bp_desktop = 900;
 	var menu_open = false;
@@ -64,11 +65,11 @@
 		// Enable / Disable Scroll from news feed
 		if( $(window).innerWidth() >= 728){
 			// Enable
-			$('#news_module .news_holder').mCustomScrollbar('update');
+			toggleLatestNewsScrollbar(true);
 
 		} else {
 			// Disable 
-			$('#news_module .news_holder').mCustomScrollbar('disable');
+			toggleLatestNewsScrollbar(false);
 		}
 	}
 
@@ -132,6 +133,28 @@
 	function toggleSearchWindow( _target ){
 		search_open = _target;
 		$('#search_module').toggleClass('visible', search_open);
+	}
+
+
+	// CREATE / DESTROY 'LATEST NEWS' SCROLLBAR
+	function toggleLatestNewsScrollbar(_flag){
+
+		if(_flag && !news_scrollbar_active){
+			$('#news_module .news_holder').mCustomScrollbar({
+				callbacks:{
+				    onUpdate:function(){
+				     	// check screen resolution 
+				     	onResize();
+				    }
+				}
+			});
+			news_scrollbar_active = true;
+
+		} else if(!_flag && news_scrollbar_active){
+			$('#news_module .news_holder').mCustomScrollbar('destroy');
+			news_scrollbar_active = false;
+		}
+
 	}
 
 
@@ -202,23 +225,10 @@
 	//	CUSTOM SCROLLBAR
 	----------------------------------------------------*/
 	$(window).on('load',function(){
-        $('#news_module .news_holder').mCustomScrollbar({
-        	//live: 'off',
-        	callbacks:{
-			    onUpdate:function(){
-			    	// disable scrollbars 
-			     	$('#news_module .news_holder').mCustomScrollbar('disable');
-			     	
-			     	// check screen resolution 
-			     	onResize();
-			    }
-			}
-        });
+        toggleLatestNewsScrollbar(false);
+        //
+    	onResize();
     });
-
-
-    //
-    onResize();
 
 
 })(jQuery);
