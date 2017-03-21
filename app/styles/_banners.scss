@@ -3,6 +3,12 @@
 /////////////////////////////////////////////////////////////////////
 ///////////////////////////   BANNERS   /////////////////////////////
 /////////////////////////////////////////////////////////////////////
+.wrapper_container .banner_bolder{
+  @media screen and (min-width: 320px){
+    position: relative;
+    margin: 0 -5px;
+  }
+}
 #main_container .banner_holder{
   text-align: center;
   margin: 2px auto;
@@ -23,12 +29,18 @@
   ///////////////////////////////////////
   // MEDIA QUERIES
   ///////////////////////////////////////
+  @media screen and (min-width: 320px){
+    &.wrapper_container
+    position: relative;
+    margin: 0 -5px;
+  }
+
   @media screen and (min-width: 728px){
   	.box.banner{ display: none; }
   	//.billboard.banner{ display: none; }
     .super.banner{
-		display: block;
-	}
+  		display: block;
+  	}
   }
 
   @media screen and (min-width: ($bp_desktop + 25em)){
