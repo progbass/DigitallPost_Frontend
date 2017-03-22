@@ -222,6 +222,18 @@
 
 
 	/*----------------------------------------------------
+	//	AJAX POST LOADING EVENTS
+	----------------------------------------------------*/
+	// When AJAX content is loaded...
+	$.fn.almDone = function(){
+		// Update image aspect after load
+		$('img').each(function() {
+			updateImagesRatios($(this));
+		});
+	};
+
+
+	/*----------------------------------------------------
 	//	CUSTOM SCROLLBAR
 	----------------------------------------------------*/
 	$(window).on('load',function(){
