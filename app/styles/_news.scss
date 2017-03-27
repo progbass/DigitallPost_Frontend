@@ -3,6 +3,8 @@
 /////////////////////////////////////////////////////////////////////
 ////////////////////////////   NEWS   ///////////////////////////////
 /////////////////////////////////////////////////////////////////////
+$news_desktop_top_offset: 9em;
+
 #news_module{
   position: relative;
   background: #d5d6d7; //$id_color2;
@@ -12,6 +14,7 @@
   ////////////////////////
   // CONTENT WRAPPER
   .wrapper{
+    overflow: hidden;
     padding: 3em 15px 2em; 
 
     // 'Shadow' Gradient 
@@ -32,20 +35,45 @@
       content: '';
       display: none;
       position: absolute;
-      left: 0; bottom: 1%;
+      left: 0; bottom: 0;
       z-index: 2;
       width: 100%;
-      padding-bottom: 15%;
+      padding-bottom: 17%;
 
-      @include linear-gradient(rgba(#d5d6d7, 0) 0%, rgba(#d5d6d7, 1) 70%);
+      @include linear-gradient(rgba(#d5d6d7, 0) 0%, rgba(#d5d6d7, 1) 75%);
     }
   }
 
+
+
+
   ////////////////////////
-  // TITLE
-  h3.cat_name{
-    margin: 0 auto;
-    font-weight: 900;
+  // HEADERS
+  .top_holder{
+    padding: 15px 15px 0 0;
+
+    // LOGO
+    .logo{
+      display: none;
+      width: 87%;
+      padding-bottom: .65em;
+      border-bottom: solid 1px #fff;
+      margin: 0 auto .75em;
+
+      img{
+        max-width: 150px;
+        width: 100%;
+        height: auto;
+      }
+    }
+
+
+    // TITLE
+    h3.cat_name{
+      margin: 0 auto;
+      font-size: 1em;
+      font-weight: 900;
+    }
   }
 
   ////////////////////////
@@ -118,8 +146,8 @@
 
       .wrapper{
         position: absolute;
-        @include clearfix();    
-        padding: 2em 0 0; 
+        @include clearfix();
+        padding: 0 0; 
         height: 100%;
         width: 30%;
         top: 0;
@@ -129,11 +157,32 @@
       }
     }
 
+
+    ////////////////////////
+    // HEADERS
+    .top_holder{
+      height: $news_desktop_top_offset;
+
+      // LOGO
+      .logo{
+        display: block;
+      }
+
+      // TITLE
+      h3.cat_name{
+        margin: 0 auto 0 .785em;
+      }
+    }
+
+
     ////////////////////////
     // NEWS LIST
     .news_holder{
-      margin: 1.7em auto 0;
-      height: 80%;
+      position: absolute;
+      top: 0;
+      padding-top: $news_desktop_top_offset;
+      margin: 0 auto 0;
+      height: 100%;
       text-align: left;
 
       ol{
@@ -157,11 +206,6 @@
     }
 
     ////////////////////////
-    // TITLE
-    h3.cat_name{
-      margin: 0 auto 0 .785em;
-    }
-
     .position{
       padding-right: $layout_desktop_right_col;
 
@@ -174,13 +218,8 @@
         width: $layout_desktop_left_col;
       }
     }
-
-    ////////////////////////
-    // NEWS LIST
-    .news_holder{
-      margin: 2em auto 0;
-    }
   }
+
 
   @media screen and (min-width: $bp_desktop_full){
     margin: 0;
@@ -201,14 +240,18 @@
     ////////////////////////
     // NEWS LIST
     .news_holder{
-      height: 87%;
-      padding: 0 .75em;
+      //height: 87%;
+      //padding: 0 .75em;
     }
 
+
     ////////////////////////
-    // TITLE
-    h3.cat_name{
-      font-size: 1.333em;
+    // HEADERS
+    .top_holder{
+      // TITLE
+      h3.cat_name{
+        font-size: 1.12em;
+      }
     }
   }
 }

@@ -225,8 +225,7 @@
 	//	AJAX POST LOADING EVENTS
 	----------------------------------------------------*/
 	// When AJAX content is loaded...
-	$.fn.almDone = function(){
-		// Update image aspect after load
+	$.fn.almComplete = function(alm){
 		$('img').each(function() {
 			updateImagesRatios($(this));
 		});
