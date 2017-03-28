@@ -44,6 +44,7 @@
     float: left;
     width: 34%;
     margin-right: 10px;
+    z-index: 1;
 
     // Image Ratio
     &:before{
@@ -164,7 +165,12 @@
       padding-bottom: 66.666%;
     }
   }
-  
+
+  // Article Info
+  .info_holder{
+    z-index: 1
+  }
+
 
   ///////////////////////////////////////
   // MEDIA QUERIES

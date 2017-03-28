@@ -116,8 +116,8 @@ $news_desktop_top_offset: 9em;
   }
 
   @media screen and (min-width: $bp_desktop){
-    margin: calc(#{-$layout_desktop_header_ratio} - #{$menu_newsletter_height}) auto 0;
-    //margin: -$layout_desktop_header_ratio auto 0;
+    margin: calc(#{-$layout_desktop_header_ratio} - #{$menu_newsletter_height}) 0 0;
+    width: $layout_desktop_left_col;
     z-index: 4;
     background: none;
 
@@ -130,10 +130,11 @@ $news_desktop_top_offset: 9em;
     
     ////////////////////////
     .position{
-      //width: 100%;
       max-width: $bp_desktop_max;
       margin: auto;
-      padding-right: 70%;
+      //padding-right: $layout_desktop_right_col;
+      padding-right: 0%;
+
 
       // Proportional Scale
       &:before{
@@ -141,7 +142,7 @@ $news_desktop_top_offset: 9em;
         display: block;
         position: relative;
         width: 100%;
-        padding-bottom: ( ($layout_desktop_header_ratio) / 30 ) * 100;
+        padding-bottom: calc(#{(($layout_desktop_header_ratio / $layout_desktop_left_col ) * 100%)} + #{$menu_newsletter_height});
       }
 
       .wrapper{
@@ -149,10 +150,8 @@ $news_desktop_top_offset: 9em;
         @include clearfix();
         padding: 0 0; 
         height: 100%;
-        width: 30%;
+        width: 100%;
         top: 0;
-        //height: 400px;
-        //top: -400px;
         background: #d5d6d7; //$id_color2;
       }
     }
@@ -204,20 +203,6 @@ $news_desktop_top_offset: 9em;
         }
       }
     }
-
-    ////////////////////////
-    .position{
-      padding-right: $layout_desktop_right_col;
-
-      // Proportional Scale
-      &:before{
-        padding-bottom: calc(#{(($layout_desktop_header_ratio / $layout_desktop_left_col ) * 100%)} + #{$menu_newsletter_height});
-      }
-
-      .wrapper{
-        width: $layout_desktop_left_col;
-      }
-    }
   }
 
 
@@ -232,6 +217,7 @@ $news_desktop_top_offset: 9em;
       .wrapper{
         top: 0px;
         position: fixed;
+        width: $layout_desktop_left_col;
         height: 100%;
         min-height: 100vh;
       }
